@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{576B6809-D2C7-4BF6-BF5B-3B1895369DB8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PLM_Model</RootNamespace>
+    <AssemblyName>PLM_Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AM_待办业务.cs" />
+    <Compile Include="AM_提醒通知.cs" />
+    <Compile Include="AM_盘点清查主表.cs" />
+    <Compile Include="AM_资产交接流程表.cs" />
+    <Compile Include="AM_资产借还流程表.cs" />
+    <Compile Include="Model录入盘点信息.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchoolX_原值变动流程表.cs" />
+    <Compile Include="SchoolX_购置验收流程表.cs" />
+    <Compile Include="SchoolX_资产处置流程表.cs" />
+    <Compile Include="SchoolX_资产报修流程表.cs" />
+    <Compile Include="SchoolX_资产转移改动信息表.cs" />
+    <Compile Include="SchoolX_资产转移流程表.cs" />
+    <Compile Include="School一级类别表.cs" />
+    <Compile Include="School一级部门表.cs" />
+    <Compile Include="School三级类别表.cs" />
+    <Compile Include="School二级类别表.cs" />
+    <Compile Include="School办公设备信息表.cs" />
+    <Compile Include="School学校名称表.cs" />
+    <Compile Include="School建筑物信息表.cs" />
+    <Compile Include="School房间信息表.cs" />
+    <Compile Include="School条件查询表.cs" />
+    <Compile Include="School查询办公设备条件表.cs" />
+    <Compile Include="School盘点人员进度.cs" />
+    <Compile Include="School盘点任务表.cs" />
+    <Compile Include="School盘点报告.cs" />
+    <Compile Include="School盘点进度.cs" />
+    <Compile Include="School资产表.cs" />
+    <Compile Include="Z_一级结构表.cs" />
+    <Compile Include="Z_设备类型表.cs" />
+    <Compile Include="流程进度查看详情表.cs" />
+    <Compile Include="消息中心Model.cs" />
+    <Compile Include="用户单位表.cs" />
+    <Compile Include="Model精度检测.cs" />
+    <Compile Include="用户表.cs" />
+    <Compile Include="盘点统计.cs" />
+    <Compile Include="设备信息表.cs" />
+    <Compile Include="设备故障维修表.cs" />
+    <Compile Include="部门表.cs" />
+    <Compile Include="预防性维修.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

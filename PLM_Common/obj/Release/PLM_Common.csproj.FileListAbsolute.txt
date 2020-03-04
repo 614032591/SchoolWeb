@@ -1,0 +1,49 @@
+G:\长客四期项目文件\CKPLM\CKPLM\PLM_Common\bin\Release\PLM_Common.dll
+G:\长客四期项目文件\CKPLM\CKPLM\PLM_Common\bin\Release\PLM_Common.pdb
+G:\长客四期项目文件\CKPLM\CKPLM\PLM_Common\obj\Release\PLM_Common.dll
+G:\长客四期项目文件\CKPLM\CKPLM\PLM_Common\obj\Release\PLM_Common.pdb
+D:\EddieGit\CKPLM\CKPLM\PLM_Common\bin\Release\PLM_Common.dll
+D:\EddieGit\CKPLM\CKPLM\PLM_Common\bin\Release\PLM_Common.pdb
+D:\EddieGit\CKPLM\CKPLM\PLM_Common\obj\Release\PLM_Common.dll
+D:\EddieGit\CKPLM\CKPLM\PLM_Common\obj\Release\PLM_Common.pdb
+D:\EddieGit\CKPLM\CKPLM\PLM_Common\obj\Release\PLM_Common.csprojResolveAssemblyReference.cache
+D:\CKPLM\CKPLM\CKPLM\PLM_Common\bin\Release\PLM_Common.dll
+D:\CKPLM\CKPLM\CKPLM\PLM_Common\bin\Release\PLM_Common.pdb
+D:\CKPLM\CKPLM\CKPLM\PLM_Common\obj\Release\PLM_Common.csprojResolveAssemblyReference.cache
+D:\CKPLM\CKPLM\CKPLM\PLM_Common\obj\Release\PLM_Common.dll
+D:\CKPLM\CKPLM\CKPLM\PLM_Common\obj\Release\PLM_Common.pdb
+D:\EddieGit\CKPLM\PLM_Common\bin\Release\PLM_Common.dll
+D:\EddieGit\CKPLM\PLM_Common\bin\Release\PLM_Common.pdb
+D:\EddieGit\CKPLM\PLM_Common\obj\Release\PLM_Common.csprojResolveAssemblyReference.cache
+D:\EddieGit\CKPLM\PLM_Common\obj\Release\PLM_Common.dll
+D:\EddieGit\CKPLM\PLM_Common\obj\Release\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Common\bin\Release\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Common\bin\Release\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Common\obj\Release\PLM_Common.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Common\obj\Release\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Common\obj\Release\PLM_Common.pdb
+E:\学校项目\SchoolPLM\PLM_Common\bin\Release\PLM_Common.dll
+E:\学校项目\SchoolPLM\PLM_Common\bin\Release\PLM_Common.pdb
+E:\学校项目\SchoolPLM\PLM_Common\obj\Release\PLM_Common.csproj.CoreCompileInputs.cache
+E:\学校项目\SchoolPLM\PLM_Common\obj\Release\PLM_Common.csproj.CopyComplete
+E:\学校项目\SchoolPLM\PLM_Common\obj\Release\PLM_Common.dll
+E:\学校项目\SchoolPLM\PLM_Common\obj\Release\PLM_Common.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Common\bin\Release\PLM_Common.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Common\bin\Release\PLM_Common.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Common\obj\Release\PLM_Common.csprojAssemblyReference.cache
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Common\obj\Release\PLM_Common.csproj.CopyComplete
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Common\obj\Release\PLM_Common.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Common\obj\Release\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\bin\Release\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\bin\Release\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\obj\Release\PLM_Common.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\obj\Release\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\obj\Release\PLM_Common.pdb
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\bin\Release\PLM_Common.dll
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\bin\Release\PLM_Common.pdb
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\bin\Release\PLM_Model.dll
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\bin\Release\PLM_Model.pdb
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\obj\Release\PLM_Common.csprojAssemblyReference.cache
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\obj\Release\PLM_Common.csproj.CopyComplete
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\obj\Release\PLM_Common.dll
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\obj\Release\PLM_Common.pdb

@@ -1,0 +1,85 @@
+G:\长客四期项目文件\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_SQLDAL.dll
+G:\长客四期项目文件\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_SQLDAL.pdb
+G:\长客四期项目文件\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_Common.dll
+G:\长客四期项目文件\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_Model.dll
+G:\长客四期项目文件\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_Common.pdb
+G:\长客四期项目文件\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_Model.pdb
+G:\长客四期项目文件\CKPLM\CKPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.csprojResolveAssemblyReference.cache
+G:\长客四期项目文件\CKPLM\CKPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.dll
+G:\长客四期项目文件\CKPLM\CKPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.pdb
+D:\EddieGit\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_SQLDAL.dll
+D:\EddieGit\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_SQLDAL.pdb
+D:\EddieGit\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_Common.dll
+D:\EddieGit\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_Model.dll
+D:\EddieGit\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_Common.pdb
+D:\EddieGit\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_Model.pdb
+D:\EddieGit\CKPLM\CKPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.dll
+D:\EddieGit\CKPLM\CKPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.pdb
+D:\EddieGit\CKPLM\CKPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.csprojResolveAssemblyReference.cache
+D:\CKPLM\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_SQLDAL.dll
+D:\CKPLM\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_SQLDAL.pdb
+D:\CKPLM\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_Common.dll
+D:\CKPLM\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_Model.dll
+D:\CKPLM\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_Common.pdb
+D:\CKPLM\CKPLM\CKPLM\PLM_SQLDAL\bin\Release\PLM_Model.pdb
+D:\CKPLM\CKPLM\CKPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.csprojResolveAssemblyReference.cache
+D:\CKPLM\CKPLM\CKPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.dll
+D:\CKPLM\CKPLM\CKPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.pdb
+D:\EddieGit\CKPLM\PLM_SQLDAL\bin\Release\PLM_SQLDAL.dll
+D:\EddieGit\CKPLM\PLM_SQLDAL\bin\Release\PLM_SQLDAL.pdb
+D:\EddieGit\CKPLM\PLM_SQLDAL\bin\Release\PLM_Common.dll
+D:\EddieGit\CKPLM\PLM_SQLDAL\bin\Release\PLM_Model.dll
+D:\EddieGit\CKPLM\PLM_SQLDAL\bin\Release\PLM_Common.pdb
+D:\EddieGit\CKPLM\PLM_SQLDAL\bin\Release\PLM_Model.pdb
+D:\EddieGit\CKPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.csprojResolveAssemblyReference.cache
+D:\EddieGit\CKPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.dll
+D:\EddieGit\CKPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_SQLDAL\bin\Release\PLM_SQLDAL.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_SQLDAL\bin\Release\PLM_SQLDAL.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_SQLDAL\bin\Release\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_SQLDAL\bin\Release\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_SQLDAL\bin\Release\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_SQLDAL\bin\Release\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.pdb
+E:\学校项目\SchoolPLM\PLM_SQLDAL\bin\Release\PLM_SQLDAL.dll
+E:\学校项目\SchoolPLM\PLM_SQLDAL\bin\Release\PLM_SQLDAL.pdb
+E:\学校项目\SchoolPLM\PLM_SQLDAL\bin\Release\PLM_Common.dll
+E:\学校项目\SchoolPLM\PLM_SQLDAL\bin\Release\PLM_Model.dll
+E:\学校项目\SchoolPLM\PLM_SQLDAL\bin\Release\PLM_Common.pdb
+E:\学校项目\SchoolPLM\PLM_SQLDAL\bin\Release\PLM_Model.pdb
+E:\学校项目\SchoolPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.csprojAssemblyReference.cache
+E:\学校项目\SchoolPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.csproj.CoreCompileInputs.cache
+E:\学校项目\SchoolPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.csproj.CopyComplete
+E:\学校项目\SchoolPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.dll
+E:\学校项目\SchoolPLM\PLM_SQLDAL\obj\Release\PLM_SQLDAL.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_SQLDAL\bin\Release\PLM_SQLDAL.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_SQLDAL\bin\Release\PLM_SQLDAL.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_SQLDAL\bin\Release\PLM_Common.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_SQLDAL\bin\Release\PLM_Model.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_SQLDAL\bin\Release\PLM_Common.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_SQLDAL\bin\Release\PLM_Model.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_SQLDAL\obj\Release\PLM_SQLDAL.csprojAssemblyReference.cache
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_SQLDAL\obj\Release\PLM_SQLDAL.csproj.CopyComplete
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_SQLDAL\obj\Release\PLM_SQLDAL.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_SQLDAL\obj\Release\PLM_SQLDAL.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_SQLDAL\bin\Release\PLM_SQLDAL.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_SQLDAL\bin\Release\PLM_SQLDAL.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_SQLDAL\bin\Release\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_SQLDAL\bin\Release\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_SQLDAL\bin\Release\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_SQLDAL\bin\Release\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_SQLDAL\obj\Release\PLM_SQLDAL.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_SQLDAL\obj\Release\PLM_SQLDAL.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_SQLDAL\obj\Release\PLM_SQLDAL.pdb
+G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\bin\Release\PLM_SQLDAL.dll
+G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\bin\Release\PLM_SQLDAL.pdb
+G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\bin\Release\PLM_Common.dll
+G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\bin\Release\PLM_Model.dll
+G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\bin\Release\PLM_Common.pdb
+G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\bin\Release\PLM_Model.pdb
+G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\obj\Release\PLM_SQLDAL.csprojAssemblyReference.cache
+G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\obj\Release\PLM_SQLDAL.csproj.CopyComplete
+G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\obj\Release\PLM_SQLDAL.dll
+G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\obj\Release\PLM_SQLDAL.pdb

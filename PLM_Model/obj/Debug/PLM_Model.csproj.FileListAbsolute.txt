@@ -1,0 +1,64 @@
+D:\EddieGit\CKPLM\CKPLM\PLM_Model\bin\Debug\PLM_Model.dll
+D:\EddieGit\CKPLM\CKPLM\PLM_Model\bin\Debug\PLM_Model.pdb
+D:\EddieGit\CKPLM\CKPLM\PLM_Model\obj\Debug\PLM_Model.dll
+D:\EddieGit\CKPLM\CKPLM\PLM_Model\obj\Debug\PLM_Model.pdb
+D:\EddieGit\CKPLM\PLM_Model\bin\Debug\PLM_Model.dll
+D:\EddieGit\CKPLM\PLM_Model\bin\Debug\PLM_Model.pdb
+D:\EddieGit\CKPLM\PLM_Model\obj\Debug\PLM_Model.csprojResolveAssemblyReference.cache
+D:\EddieGit\CKPLM\PLM_Model\obj\Debug\PLM_Model.dll
+D:\EddieGit\CKPLM\PLM_Model\obj\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\PLM_Model\bin\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\PLM_Model\bin\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.pdb
+G:\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\bin\Debug\PLM_Model.dll
+G:\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\bin\Debug\PLM_Model.pdb
+G:\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.csprojResolveAssemblyReference.cache
+G:\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.dll
+G:\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\bin\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\bin\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\bin\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\bin\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\bin\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\bin\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.pdb
+E:\学校项目\SchoolPLM\PLM_Model\bin\Debug\PLM_Model.dll
+E:\学校项目\SchoolPLM\PLM_Model\bin\Debug\PLM_Model.pdb
+E:\学校项目\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.csprojAssemblyReference.cache
+E:\学校项目\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.dll
+E:\学校项目\SchoolPLM\PLM_Model\obj\Debug\PLM_Model.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Model\bin\Debug\PLM_Model.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Model\bin\Debug\PLM_Model.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Model\obj\Debug\PLM_Model.csprojAssemblyReference.cache
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Model\obj\Debug\PLM_Model.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Model\obj\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Model\bin\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Model\bin\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Model\obj\Debug\PLM_Model.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Model\obj\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Model\obj\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Model\bin\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Model\bin\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Model\obj\Debug\PLM_Model.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Model\obj\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Model\obj\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\PLM_Model\bin\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\PLM_Model\bin\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\PLM_Model\obj\Debug\PLM_Model.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\PLM_Model\obj\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\PLM_Model\obj\Debug\PLM_Model.pdb
+G:\项目\SchoolPLM(202002170910new)\PLM_Model\bin\Debug\PLM_Model.dll
+G:\项目\SchoolPLM(202002170910new)\PLM_Model\bin\Debug\PLM_Model.pdb
+G:\项目\SchoolPLM(202002170910new)\PLM_Model\obj\Debug\PLM_Model.dll
+G:\项目\SchoolPLM(202002170910new)\PLM_Model\obj\Debug\PLM_Model.pdb
+G:\项目\SchoolPLM(202002170910new)\PLM_Model\obj\Debug\PLM_Model.csprojAssemblyReference.cache

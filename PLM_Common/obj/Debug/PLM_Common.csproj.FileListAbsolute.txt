@@ -1,0 +1,59 @@
+D:\EddieGit\CKPLM\CKPLM\PLM_Common\bin\Debug\PLM_Common.dll
+D:\EddieGit\CKPLM\CKPLM\PLM_Common\bin\Debug\PLM_Common.pdb
+D:\EddieGit\CKPLM\CKPLM\PLM_Common\obj\Debug\PLM_Common.dll
+D:\EddieGit\CKPLM\CKPLM\PLM_Common\obj\Debug\PLM_Common.pdb
+D:\EddieGit\CKPLM\CKPLM\PLM_Common\bin\Debug\ThoughtWorks.QRCode.dll
+D:\EddieGit\CKPLM\PLM_Common\bin\Debug\PLM_Common.dll
+D:\EddieGit\CKPLM\PLM_Common\bin\Debug\PLM_Common.pdb
+D:\EddieGit\CKPLM\PLM_Common\obj\Debug\PLM_Common.csprojResolveAssemblyReference.cache
+D:\EddieGit\CKPLM\PLM_Common\obj\Debug\PLM_Common.dll
+D:\EddieGit\CKPLM\PLM_Common\obj\Debug\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\PLM_Common\bin\Debug\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\PLM_Common\bin\Debug\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\PLM_Common\obj\Debug\PLM_Common.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\PLM_Common\obj\Debug\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\PLM_Common\obj\Debug\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Common\bin\Debug\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Common\bin\Debug\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Common\obj\Debug\PLM_Common.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Common\obj\Debug\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\PLM_Common\obj\Debug\PLM_Common.pdb
+E:\学校项目\SchoolPLM\PLM_Common\bin\Debug\PLM_Common.dll
+E:\学校项目\SchoolPLM\PLM_Common\bin\Debug\PLM_Common.pdb
+E:\学校项目\SchoolPLM\PLM_Common\obj\Debug\PLM_Common.csprojAssemblyReference.cache
+E:\学校项目\SchoolPLM\PLM_Common\obj\Debug\PLM_Common.csproj.CopyComplete
+E:\学校项目\SchoolPLM\PLM_Common\obj\Debug\PLM_Common.dll
+E:\学校项目\SchoolPLM\PLM_Common\obj\Debug\PLM_Common.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Common\bin\Debug\PLM_Common.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Common\bin\Debug\PLM_Common.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Common\obj\Debug\PLM_Common.csproj.CopyComplete
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Common\obj\Debug\PLM_Common.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Common\obj\Debug\PLM_Common.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\PLM_Common\obj\Debug\PLM_Common.csprojAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\bin\Debug\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\bin\Debug\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\obj\Debug\PLM_Common.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\obj\Debug\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\obj\Debug\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\bin\Debug\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\bin\Debug\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\obj\Debug\PLM_Common.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\obj\Debug\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\obj\Debug\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\bin\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(20200204)\SchoolPLM(20200204)\PLM_Common\bin\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\PLM_Common\bin\Debug\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\PLM_Common\bin\Debug\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\PLM_Common\bin\Debug\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\PLM_Common\bin\Debug\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\PLM_Common\obj\Debug\PLM_Common.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\PLM_Common\obj\Debug\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\SchoolPLM(new)\PLM_Common\obj\Debug\PLM_Common.pdb
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\bin\Debug\PLM_Common.dll
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\bin\Debug\PLM_Common.pdb
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\bin\Debug\PLM_Model.dll
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\bin\Debug\PLM_Model.pdb
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\obj\Debug\PLM_Common.csprojAssemblyReference.cache
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\obj\Debug\PLM_Common.csproj.CopyComplete
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\obj\Debug\PLM_Common.dll
+G:\项目\SchoolPLM(202002170910new)\PLM_Common\obj\Debug\PLM_Common.pdb

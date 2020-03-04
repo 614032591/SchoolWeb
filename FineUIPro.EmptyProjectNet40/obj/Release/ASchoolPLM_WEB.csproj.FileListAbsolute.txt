@@ -1,0 +1,84 @@
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\obj\Release\ASchoolPLM_WEB.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\obj\Release\FineUIPro.EmptyProjectNet40.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\obj\Release\FineUIPro.EmptyProjectNet40.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.dll.config
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\Newtonsoft.Json.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM.BusinessRlues.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM_SQLDAL.dll
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM.BusinessRlues.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\Newtonsoft.Json.xml
+C:\Users\hmitr\Desktop\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM_SQLDAL.pdb
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.dll.config
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.dll
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.pdb
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\Newtonsoft.Json.dll
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM.BusinessRlues.dll
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM_Common.dll
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM_Model.dll
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM_SQLDAL.dll
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM.BusinessRlues.pdb
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM_Common.pdb
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM_Model.pdb
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\Newtonsoft.Json.xml
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\bin\PLM_SQLDAL.pdb
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\obj\Release\ASchoolPLM_WEB.csprojAssemblyReference.cache
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\obj\Release\ASchoolPLM_WEB.csproj.CoreCompileInputs.cache
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\obj\Release\ASchoolPLM_WEB.csproj.CopyComplete
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\obj\Release\FineUIPro.EmptyProjectNet40.dll
+E:\学校项目\SchoolPLM\FineUIPro.EmptyProjectNet40\obj\Release\FineUIPro.EmptyProjectNet40.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.dll.config
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\bin\Newtonsoft.Json.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\bin\PLM.BusinessRlues.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\bin\PLM_Common.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\bin\PLM_Model.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\bin\PLM_SQLDAL.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\bin\PLM.BusinessRlues.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\bin\PLM_Common.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\bin\PLM_Model.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\bin\Newtonsoft.Json.xml
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\bin\PLM_SQLDAL.pdb
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\obj\Release\ASchoolPLM_WEB.csprojAssemblyReference.cache
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\obj\Release\ASchoolPLM_WEB.csproj.CopyComplete
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\obj\Release\FineUIPro.EmptyProjectNet40.dll
+G:\新建文件夹 (2)\SchoolPLM(1)\FineUIPro.EmptyProjectNet40\obj\Release\FineUIPro.EmptyProjectNet40.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.dll.config
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\bin\Newtonsoft.Json.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\bin\PLM.BusinessRlues.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\bin\PLM_Common.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\bin\PLM_Model.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\bin\PLM_SQLDAL.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\bin\PLM.BusinessRlues.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\bin\PLM_Common.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\bin\PLM_Model.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\bin\Newtonsoft.Json.xml
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\bin\PLM_SQLDAL.pdb
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\obj\Release\ASchoolPLM_WEB.csprojResolveAssemblyReference.cache
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\obj\Release\FineUIPro.EmptyProjectNet40.dll
+C:\Users\hmitr\Desktop\SchoolPLM(20200204)\SchoolPLM(20200204)\FineUIPro.EmptyProjectNet40\obj\Release\FineUIPro.EmptyProjectNet40.pdb
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.dll.config
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.dll
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\bin\FineUIPro.EmptyProjectNet40.pdb
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\bin\Newtonsoft.Json.dll
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\bin\PLM.BusinessRlues.dll
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\bin\PLM_Common.dll
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\bin\PLM_Model.dll
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\bin\PLM_SQLDAL.dll
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\bin\PLM.BusinessRlues.pdb
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\bin\PLM_Common.pdb
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\bin\PLM_Model.pdb
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\bin\Newtonsoft.Json.xml
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\bin\PLM_SQLDAL.pdb
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\obj\Release\ASchoolPLM_WEB.csprojAssemblyReference.cache
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\obj\Release\ASchoolPLM_WEB.csproj.CopyComplete
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\obj\Release\FineUIPro.EmptyProjectNet40.dll
+G:\项目\SchoolPLM(202002170910new)\FineUIPro.EmptyProjectNet40\obj\Release\FineUIPro.EmptyProjectNet40.pdb
