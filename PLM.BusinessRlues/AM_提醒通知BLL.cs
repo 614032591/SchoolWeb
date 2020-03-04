@@ -18,7 +18,7 @@ namespace PLM.BusinessRlues
         public int 默认消息数()
         {
             return sql.默认消息数();
-        }
+        }//sss
         public DataSet 条件查询(string str)
         {
             return sql.条件查询(str);
