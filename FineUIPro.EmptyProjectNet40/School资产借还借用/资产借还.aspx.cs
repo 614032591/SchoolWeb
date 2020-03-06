@@ -85,7 +85,7 @@ namespace FineUIPro.EmptyProjectNet40.School资产借还借用
         {
             School查询办公设备条件表 model = new School查询办公设备条件表();
             string str部门 = 部门.SelectedText;
-            if (str部门 != "全部" && str部门 != null)
+            if (str部门 != null)
             {
                 model.归属部门 = Convert.ToInt32(部门.SelectedValue);
                 if (负责人.SelectedText != null)
@@ -191,12 +191,15 @@ namespace FineUIPro.EmptyProjectNet40.School资产借还借用
             model.借用时间 = 借用时间.Text;
             model.备注信息 = 备注信息.Text;
             int[] selections = Grid4.SelectedRowIndexArray;
+            int 资产数量 = 0;
             foreach (int rowIndex in selections)
             {
                 int ID = Convert.ToInt32(Grid4.DataKeys[rowIndex][0]);
                 string xxx = Grid4.DataKeys[rowIndex][0].ToString();
                 model.资产ID += ID.ToString() + ",";
+                资产数量++;
             }
+            model.资产数量 = 资产数量.ToString();
             School资产借还交接BLL bll = new School资产借还交接BLL();
 
             AM_提醒通知 ammodel = new AM_提醒通知();

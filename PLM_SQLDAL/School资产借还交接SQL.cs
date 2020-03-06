@@ -15,9 +15,9 @@ namespace PLM_SQLDAL
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("INSERT INTO AM_资产借还流程表 ");
-            sb.Append(" (流程状态,Sort,发起人,借用人,提交时间,预计归还时间,单据编号,借出人,借用时间,备注信息,资产ID");
+            sb.Append(" (流程状态,Sort,发起人,借用人,提交时间,预计归还时间,单据编号,借出人,借用时间,备注信息,资产ID,资产数量");
             sb.Append(" ) VALUES( ");
-            sb.Append(" @流程状态,@Sort,@发起人,@借用人,@提交时间,@预计归还时间,@单据编号,@借出人,@借用时间,@备注信息,@资产ID");
+            sb.Append(" @流程状态,@Sort,@发起人,@借用人,@提交时间,@预计归还时间,@单据编号,@借出人,@借用时间,@备注信息,@资产ID,@资产数量");
             sb.Append(")");
             sb.Append(" SELECT ");
             sb.Append(" @@identity ");
@@ -33,6 +33,7 @@ namespace PLM_SQLDAL
                                        new SqlParameter("@借用时间",model.借用时间),
                                        new SqlParameter("@备注信息",model.备注信息),
                                        new SqlParameter("@资产ID",model.资产ID),
+                                        new SqlParameter("@资产数量",model.资产数量),
                                    };
             int result = Convert.ToInt32(DBHelper.ExecuteScalar(DBHelper.ConnectionString, CommandType.Text, sb.ToString(), para));
             if (result > 0)

@@ -45,6 +45,6 @@ namespace PLM_Model
 
         public string 出借人确认时间 { get; set; }
 
-
+        public string 资产数量 { get; set; }
     }
 }

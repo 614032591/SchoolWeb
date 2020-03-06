@@ -63,6 +63,7 @@ namespace PLM.BusinessRlues
         {
             return sql.R数量(str, stt);
         }
+
         //待办处理-------------------------------------------------------------
         public SchoolX_资产报修流程表 获取报修信息(int 待办id)
         {
@@ -72,7 +73,10 @@ namespace PLM.BusinessRlues
         {
             return sql.报修Sort(id);
         }
-
+        public string 获取维修人电话(string str)
+        {
+            return sql.获取维修人电话(str);
+        }
 
 
         //资产转移--------------------------------------------------------------

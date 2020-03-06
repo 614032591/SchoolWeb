@@ -139,7 +139,23 @@ namespace PLM_SQLDAL
                 return 0;
             }
         }
-
+        #region 资产报修--获取维修人电话
+        public string 获取维修人电话(string str)
+        {
+            string sql = string.Format("SELECT * FROM 用户表 WHERE 姓名='{0}'", str);
+            SqlDataReader read = DBHelper.ExecuteReader(DBHelper.ConnectionString, CommandType.Text, sql.ToString());
+            if (read.Read())
+            {
+                 string 维修电话 = read["电话号码"].ToString();
+                return 维修电话;
+            }
+            else
+            {
+                return "";
+            }
+           
+        }
+        #endregion
 
         #region 获取资产转移信息
         public SchoolX_资产转移流程表 获取资产转移信息(int id)
