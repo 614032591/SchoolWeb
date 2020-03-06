@@ -138,3 +138,13 @@ G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\obj\Debug\PLM_SQLDAL.csprojAssem
 G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\obj\Debug\PLM_SQLDAL.csproj.CopyComplete
 G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\obj\Debug\PLM_SQLDAL.dll
 G:\项目\SchoolPLM(202002170910new)\PLM_SQLDAL\obj\Debug\PLM_SQLDAL.pdb
+G:\SchoolWeb\PLM_SQLDAL\bin\Debug\PLM_SQLDAL.dll
+G:\SchoolWeb\PLM_SQLDAL\bin\Debug\PLM_SQLDAL.pdb
+G:\SchoolWeb\PLM_SQLDAL\bin\Debug\PLM_Common.dll
+G:\SchoolWeb\PLM_SQLDAL\bin\Debug\PLM_Model.dll
+G:\SchoolWeb\PLM_SQLDAL\bin\Debug\PLM_Common.pdb
+G:\SchoolWeb\PLM_SQLDAL\bin\Debug\PLM_Model.pdb
+G:\SchoolWeb\PLM_SQLDAL\obj\Debug\PLM_SQLDAL.csprojAssemblyReference.cache
+G:\SchoolWeb\PLM_SQLDAL\obj\Debug\PLM_SQLDAL.csproj.CopyComplete
+G:\SchoolWeb\PLM_SQLDAL\obj\Debug\PLM_SQLDAL.dll
+G:\SchoolWeb\PLM_SQLDAL\obj\Debug\PLM_SQLDAL.pdb

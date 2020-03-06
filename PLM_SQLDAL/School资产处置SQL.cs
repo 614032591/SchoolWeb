@@ -29,7 +29,12 @@ namespace PLM_SQLDAL
             {
                 if (model.一级分类 != "" && model.一级分类 != null)
                 {
-                    sb.Append(" and 办公设备信息表.一级类别名称 = '" + model.一级分类 + "' ");
+                    if (model.一级分类!="全部")
+                    {
+                        sb.Append(" and 办公设备信息表.一级类别名称 = '" + model.一级分类 + "' ");
+                    }
+                   
+                    
                 }
                 if (model.二级分类 != "" && model.二级分类 != null)
                 {
@@ -38,11 +43,16 @@ namespace PLM_SQLDAL
                 if (model.三级分类 != "" && model.三级分类 != null)
                 {
                     sb.Append(" and 办公设备信息表.三级类别名称 ='" + model.三级分类 + "'");
-                }
+                }              
 
                 if (model.归属部门 > 0)
                 {
                     sb.Append(" and 办公设备信息表.归属部门=" + model.归属部门);
+                }
+
+                if (model.归属部门s != "" && model.归属部门s!=null)
+                {
+                    sb.Append(" and 办公设备信息表.归属部门='" + model.归属部门s+"'");
                 }
                 if (model.负责人 > 0)
                 {
@@ -76,6 +86,19 @@ namespace PLM_SQLDAL
                         sb.Append("and  办公设备信息表.位置 in(0)");
                     }
                 }
+
+                if (model.存放地点s != "" && model.存放地点s != null)
+                {
+                    if (model.存放地点s=="全部")
+                    {
+                        sb.Append("");
+                    }
+                    else
+                    {
+                        sb.Append(" and 办公设备信息表.存放地点='" + model.存放地点s + "'");
+                    }
+                    
+                }
                 if (model.房间 > 0)
                 {
                     sb.Append(" and 办公设备信息表.位置=" + model.房间);
@@ -85,7 +108,7 @@ namespace PLM_SQLDAL
                 {
                     sb.Append("  and 办公设备信息表.投入使用日期  between '" + model.起始投入日期 + "' and '" + model.结束投入日期 + "'");
                 }
-                if (model.关键字 != "")
+                if (model.关键字 != "" && model.关键字 != null)
                 {
                     sb.Append(" and 办公设备信息表.名称 like '%" + model.关键字 + "%'");
                 }

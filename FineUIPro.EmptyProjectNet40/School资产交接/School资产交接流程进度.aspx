@@ -22,7 +22,7 @@
 
             <h5>
                 <asp:Label ID="Label6" runat="server" Text="Label" Font-Size="X-Large" ForeColor="#ff3300"></asp:Label></h5>
-            <ul class="nav nav-pills nav-justified step step-progress" data-step="4">
+            <ul class="nav nav-pills nav-justified step step-progress" data-step="3">
                 <li>
                     <a>已交付<span class="caret"></span></a>
                     <br />
@@ -154,7 +154,7 @@
                 var sort = document.getElementById("<%= Label1.ClientID %>").innerText;
                 if (sort == 0) {
                     //完成
-                    bsStep(4);
+                    bsStep(3);
                 } else {
                     bsStep(sort);
                 }

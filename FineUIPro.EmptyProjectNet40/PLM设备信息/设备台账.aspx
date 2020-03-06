@@ -55,7 +55,8 @@
                                         <f:RenderField ColumnID="设备编号" DataField="设备编号" HeaderText="设备编号"></f:RenderField>
                                         <f:RenderField ColumnID="设备名称" DataField="设备名称" HeaderText="设备名称" Width="200"></f:RenderField>
                                         <f:RenderField ColumnID="设备型号" DataField="设备型号" HeaderText="设备型号" />
-                                        <f:RenderField ColumnID="固资原值" DataField="固资原值" HeaderText="固资原值" />
+                                        <f:RenderField ColumnID="固资
+                                            值" DataField="固资原值" HeaderText="固资原值" />
                                         <f:RenderField ColumnID="固资净值" DataField="固资净值" HeaderText="固资净值" />
                                         <f:RenderField ColumnID="制造商" DataField="制造商" HeaderText="制造商" />
                                         <f:RenderField ColumnID="投产时间" DataField="投产时间" HeaderText="投产时间" />

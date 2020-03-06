@@ -451,7 +451,7 @@ namespace FineUIPro.EmptyProjectNet40.购置验收
             //modelgz.记账人 = 记账人.Text;
             modelgz.取得方式 = 取得方式.SelectedItem.Text;
             modelgz.购置日期 = 购置日期.Text;
-            //modelgz.验收日期 = 验收日期.Text;
+            modelgz.验收日期 = 验收日期.Text;
             List<School办公设备信息表> listmodel = new List<School办公设备信息表>();
             foreach (JObject mergedRow in mergedData)
             {

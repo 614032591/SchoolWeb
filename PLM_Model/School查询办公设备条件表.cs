@@ -29,6 +29,10 @@ namespace PLM_Model
 
         public string 关键字 { get; set; }
 
+        public string 存放地点s { get; set; }
+
+        public string 归属部门s { get; set; }
+
 
     }
 }

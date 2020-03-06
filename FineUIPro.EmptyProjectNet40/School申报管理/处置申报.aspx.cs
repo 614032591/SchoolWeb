@@ -27,7 +27,17 @@ namespace FineUIPro.EmptyProjectNet40.申报审批
 
         private void BindGrid()
         {
-            DataSet ds = bll.首页_X_资产处置流程表("");
+            DataSet ds = bll.首页_X_资产处置流程表("","全部");
+            DataTable dt = ds.Tables[0].Copy();//复制一份table
+            // 3.绑定到Grid
+            Grid1.DataSource = dt;//DataTable
+            Grid1.DataBind();
+        }
+
+        //申报种类条件查询
+        protected void 申报种类_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet ds = bll.首页_X_资产处置流程表(流程状态.SelectedText, 申报种类.SelectedValue);
             DataTable dt = ds.Tables[0].Copy();//复制一份table
             // 3.绑定到Grid
             Grid1.DataSource = dt;//DataTable
@@ -35,11 +45,9 @@ namespace FineUIPro.EmptyProjectNet40.申报审批
         }
 
         //流程状态
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void 流程状态_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string flowstate = DropDownList1.SelectedText;
-
-            DataSet ds = bll.首页_X_资产处置流程表(flowstate);
+            DataSet ds = bll.首页_X_资产处置流程表(流程状态.SelectedText, 申报种类.SelectedValue);
             DataTable dt = ds.Tables[0].Copy();//复制一份table
             // 3.绑定到Grid
             Grid1.DataSource = dt;//DataTable
@@ -49,7 +57,7 @@ namespace FineUIPro.EmptyProjectNet40.申报审批
         protected void btnCheckSelection_Click(object sender, EventArgs e)
         {
             Window1.Hidden = false;
-            DataSet ds = bll.待处置库查询("待报废");
+            DataSet ds = bll.待处置库查询("待报废","");
             DataTable dt = ds.Tables[0].Copy();//复制一份table
             Grid2.DataSource = dt;//DataTable
             Grid2.DataBind();
@@ -60,7 +68,7 @@ namespace FineUIPro.EmptyProjectNet40.申报审批
         {
 
             string flowstate = 类别.SelectedValue;
-            DataSet ds = bll.待处置库查询(flowstate);
+            DataSet ds = bll.待处置库查询(flowstate,"");
             DataTable dt = ds.Tables[0].Copy();//复制一份table
             Grid2.DataSource = dt;//DataTable
             Grid2.DataBind();
@@ -122,17 +130,26 @@ namespace FineUIPro.EmptyProjectNet40.申报审批
                         //Grid8.SummaryData = summary;
                         //待报废Grid3
                         报废流程状态.Text = "待审核";
-                        报废流程状态.Enabled = false;
+                       
                         报废_申报单位.Text = Session["二级部门名称"].ToString();
-                        报废_申报单位.Enabled = false;
+                        
                         报废_申报日期.Text = DateTime.Now.ToShortDateString();
                         报废单据编号.Text = SchoolUtility.strbumber("ZCCZBF"); ;
-                        报废单据编号.Enabled = false;
+                       
                         报废_申请人.Text = HttpContext.Current.Session["姓名"].ToString();
-                        报废_申请人.Enabled = false;
+                        
 
                         报废_职务.Text = 职务;
-                        报废_职务.Enabled = false;
+                      
+                        try
+                        {
+                            报废_电话.Text = HttpContext.Current.Session["联系电话"].ToString();
+                        }
+                        catch (Exception)
+                        {
+                            报废_电话.Text = "";
+
+                        }
 
                     }
                 }
@@ -175,9 +192,9 @@ namespace FineUIPro.EmptyProjectNet40.申报审批
 
                         //当前用户部门是调出单位  调入单位操作人选填
                         调拨流程状态.Text = "待审核";
-                        调拨流程状态.Enabled = false;
+                        
                         调拨调出单位.Text = Session["二级部门名称"].ToString();
-                        调拨调出单位.Enabled = false;
+                        
                         调拨申报日期.Text = DateTime.Now.ToShortDateString();
                         调拨验收日期.Text = DateTime.Now.ToShortDateString();
 
@@ -188,12 +205,32 @@ namespace FineUIPro.EmptyProjectNet40.申报审批
                         string h = dt.Hour.ToString();
                         string mm = dt.Minute.ToString();
                         调拨单据编号.Text = SchoolUtility.strbumber("ZCCZDB");
-                        调拨单据编号.Enabled = false;
+                        
                         调拨_申请人.Text = HttpContext.Current.Session["姓名"].ToString();
-                        调拨_申请人.Enabled = false;
-                        调拨职务.Enabled = false;
-                        调拨电话.Enabled = false;
+                       
+                        
                         调拨职务.Text = HttpContext.Current.Session["职务"].ToString();
+
+                        float 总数 = 0.0f;
+                        float 总价 = 0.0f;
+                        if (listdata != null)
+                        {
+                            foreach (School办公设备信息表 itemjj in listdata)
+                            {
+                                总数 += itemjj.数量;
+                                总价 += Convert.ToInt32(itemjj.价格);
+                            }
+                        }
+
+
+
+                        JObject summary = new JObject();
+                        //summary.Add("major", "全部合计");
+                        summary.Add("数量", 总数.ToString("F2"));
+                        summary.Add("价格", 总价.ToString("F2"));
+
+                        Grid5.SummaryData = summary;
+                        Grid6.SummaryData = summary;
                         try
                         {
                             调拨电话.Text = HttpContext.Current.Session["联系电话"].ToString();
@@ -918,6 +955,7 @@ namespace FineUIPro.EmptyProjectNet40.申报审批
                     model.Sort = 6;
                     model.ID = flowid;
                     model.流程状态 = "等待调出单位管理员处理";
+                   
                     if (bll.调拨流程处理(model) > 0)
                     {
                         Alert.ShowInTop("审批成功！", "提示信息", MessageBoxIcon.Information);
@@ -979,6 +1017,7 @@ namespace FineUIPro.EmptyProjectNet40.申报审批
                         model.FlowName = FlowName.Text;
                         model.Sort = 0;
                         model.ID = flowid;
+                        model.SID= 资产ID.Text;
                         model.流程状态 = "完成";
                         if (bll.调拨流程处理(model) > 0)
                         {
@@ -1097,6 +1136,7 @@ namespace FineUIPro.EmptyProjectNet40.申报审批
                     ZCCLSPYES.Text = "财务人员同意";
                     model.财政部门处理时间 = processingtime;
                     model.ID = flowid;
+                    model.SID = 资产ID.Text;
                     if (处理意见.Text == "")
                     {
                         model.财政部门意见 = "同意";
@@ -1189,5 +1229,7 @@ namespace FineUIPro.EmptyProjectNet40.申报审批
         {
             Window5.Hidden = true;
         }
+
+        
     }
 }

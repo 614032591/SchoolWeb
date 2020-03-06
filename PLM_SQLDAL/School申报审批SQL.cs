@@ -11,7 +11,7 @@ namespace PLM_SQLDAL
 {
     public class School申报审批SQL
     {
-        public DataSet 首页_X_资产处置流程表(string state)
+        public DataSet 首页_X_资产处置流程表(string state,string declareTypes)
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("select  *  from X_资产处置流程表 where  ID>0 ");
@@ -27,19 +27,35 @@ namespace PLM_SQLDAL
             {
                 sb.Append(" and 流程状态='未通过'");
             }
+            if (declareTypes=="报废")
+            {
+                sb.Append(" and FlowName='资产处置-报废'");
+            }
+            else if (declareTypes == "调拨")
+            {
+                sb.Append(" and FlowName='资产处置-调拨'");
+            }
+            else if (declareTypes == "报损")
+            {
+                sb.Append(" and FlowName='资产处置-报损'");
+            }
+            else if (declareTypes == "出售")
+            {
+                sb.Append(" and FlowName='资产处置-出售'");
+            }
             sb.Append(" and 事项名称 !=''");
             return DBHelper.ExecuteDataset(DBHelper.ConnectionString, CommandType.Text, sb.ToString());
 
 
         }
 
-        public DataSet 待处置库查询(string state)
+        public DataSet 待处置库查询(string state,string purchaseTime)
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("SELECT  办公设备信息表.ID, 办公设备信息表.编号 ,办公设备信息表.名称,办公设备信息表.资产状态");
+            sb.Append("SELECT  办公设备信息表.ID, 办公设备信息表.编号 ,办公设备信息表.名称,办公设备信息表.资产状态,办公设备信息表.原值,办公设备信息表.净值");
             sb.Append(" ,办公设备信息表.投入使用日期,    办公设备信息表.型号,办公设备信息表.一级类别名称 as 类型 ");
             sb.Append(" ,办公设备信息表.归属学校,办公设备信息表.归属教师ID,办公设备信息表.位置,办公设备信息表.归属部门,");
-            sb.Append(" 办公设备信息表.价格 ,办公设备信息表.数量,办公设备信息表.使用方向,d.学校名称, e.姓名 AS 负责人,   ");
+            sb.Append(" 办公设备信息表.价格 ,办公设备信息表.数量,办公设备信息表.使用方向,办公设备信息表.购置日期,d.学校名称, e.姓名 AS 负责人,   ");
             sb.Append("      b.名称 AS 房间名称,c.名称 AS 部门名称 from 办公设备信息表 , dbo.房间信息表 AS b ");
             sb.Append("     , 一级部门表 as c,学校名称表 as d,用户表 AS e  where 办公设备信息表.位置 =  b.ID ");
             sb.Append(" and  办公设备信息表.归属部门 = c.ID and 办公设备信息表.位置 =  b.ID ");
@@ -48,6 +64,13 @@ namespace PLM_SQLDAL
             if (state != "")
             {
                 sb.Append(" and  办公设备信息表.处置临时状态 = '" + state + "'");
+            }
+            if (purchaseTime== "购置时间正序")
+            {
+                sb.Append(" order by  办公设备信息表.购置日期 ASC");
+            }else if (purchaseTime == "购置时间倒序")
+            {
+                sb.Append(" order by  办公设备信息表.购置日期 DESC");
             }
 
             return DBHelper.ExecuteDataset(DBHelper.ConnectionString, CommandType.Text, sb.ToString());
@@ -764,7 +787,7 @@ namespace PLM_SQLDAL
                 ammodel.发起人 = model.调入单位管理员确认;
                 ammodel.发起时间 = DateTime.Now;
                 ammodel.是否已读 = "否";
-                ammodel.通知类型 = "待办事项通知";
+                ammodel.通知类型 = "系统通知";
                 ammodel.通知职务 = "资产管理员";
                 ammodel.消息内容 = "您来自" + model.调入单位管理员确认 + "的资产处置-调拨处理通知！";
                 ammodel.消息事项 = "资产处置-调拨";
@@ -787,7 +810,26 @@ namespace PLM_SQLDAL
                 dbmodel.通知内容 = "您来自" + model.调入单位管理员确认 + "的资产处置-调拨处理,请及时处理！";
                 dbmodel.Sort = model.Sort;
                 SchoolUtility.修改待办中心(dbmodel);
+
+
+
+                string sid = model.SID;
+                string[] arr = sid.Split(',');
+                foreach (string item in arr)
+                {
+
+                    if (item != "")
+                    {
+                        string sqls = string.Format("update  办公设备信息表 set 使用状态='已调拨',处置临时状态='' where ID=" + Convert.ToInt32(item));
+                        DBHelper.ExecuteNonQuery(DBHelper.ConnectionString, CommandType.Text, sql.ToString());
+                    }
+
+                }
+
+
                 return result;
+
+
             }
             else
             {
@@ -909,7 +951,7 @@ namespace PLM_SQLDAL
                     ammodel.消息内容 = "您来自" + model.财政部门 + "的资产处置报废申请分管领导已通过！";
                     ammodel.发起人 = model.财政部门;
                     ammodel.发起时间 = DateTime.Now;
-                    ammodel.通知类型 = "待办事项通知";
+                    ammodel.通知类型 = "结果反馈通知";
                     ammodel.是否已读 = "否";
                     ammodel.通知职务 = "财务部门";
                     ammodel.FlowID = model.ID;
@@ -934,6 +976,19 @@ namespace PLM_SQLDAL
                     upmodel.发起时间 = DateTime.Now.ToLongDateString();
                     SchoolUtility.修改待办中心(upmodel);
 
+                    string sid = model.SID;
+                    string[] arr=sid.Split(',');
+                    foreach(string item in arr)
+                    {
+                       
+                        if (item != "")
+                        {
+                            string sql = string.Format("update  办公设备信息表 set 使用状态='已报废',处置临时状态='' where ID=" + Convert.ToInt32(item));
+                            DBHelper.ExecuteNonQuery(DBHelper.ConnectionString, CommandType.Text, sql.ToString());
+                        }
+                        
+                    }
+                
                 }
                 //else if (model.Sort == 6)
                 //{

@@ -60,13 +60,13 @@ namespace FineUIPro.EmptyProjectNet40.申报审批
         protected global::FineUIPro.DropDownList 申报种类;
 
         /// <summary>
-        /// DropDownList1 控件。
+        /// 流程状态 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::FineUIPro.DropDownList DropDownList1;
+        protected global::FineUIPro.DropDownList 流程状态;
 
         /// <summary>
         /// Grid1 控件。

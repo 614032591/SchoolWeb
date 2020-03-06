@@ -1697,6 +1697,18 @@ namespace FineUIPro.EmptyProjectNet40.School代办中心
             {
                 joBuilder.AddProperty("iframeUrl", ResolveUrl(String.Format("/School购置验收/School购置验收流程进度.aspx?SBBH={0}&sort={1}&FlowID={2}", ReceiptNumber, HttpUtility.UrlEncode(sort.ToString()), FlowID)));
             }
+            else if (flowname == "资产报修")
+            {
+                joBuilder.AddProperty("iframeUrl", ResolveUrl(String.Format("/School资产报修/School资产报修流程进度.aspx?SBBH={0}&sort={1}&FlowID={2}", ReceiptNumber, HttpUtility.UrlEncode(sort.ToString()), FlowID)));
+            }
+            else if (flowname == "资产借还")
+            {
+                joBuilder.AddProperty("iframeUrl", ResolveUrl(String.Format("/School资产借还借用/School资产借还流程进度.aspx?SBBH={0}&sort={1}&FlowID={2}", ReceiptNumber, HttpUtility.UrlEncode(sort.ToString()), FlowID)));
+            }
+            else if (flowname == "资产交接")
+            {
+                joBuilder.AddProperty("iframeUrl", ResolveUrl(String.Format("/School资产交接/School资产交接流程进度.aspx?SBBH={0}&sort={1}&FlowID={2}", ReceiptNumber, HttpUtility.UrlEncode(sort.ToString()), FlowID)));
+            }
             //joBuilder.AddProperty("iframeUrl", ResolveUrl(String.Format("School购置验收流程进度.aspx?SBBH={0}&sort={1}", id, HttpUtility.UrlEncode(sort.ToString()))));
             joBuilder.AddProperty("refreshWhenExist", true);
             joBuilder.AddProperty("iconFont", "pencil");

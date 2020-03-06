@@ -159,10 +159,14 @@
         <script>
             $(function () {
                 var sort = document.getElementById("<%= Label1.ClientID %>").innerText;
-                bsStep(sort);
-                document.getElementById("<%= Label1.ClientID %>").style.display = "none";//隐藏lable
-                //bsStep(i) i 为number 可定位到第几步 如bsStep(2)/bsStep(3)
-            })
+               if (sort == 0) {
+                   //完成
+                   bsStep(4);
+               } else {
+                   bsStep(sort);
+               }
+               document.getElementById("<%= Label1.ClientID %>").style.display = "none";//隐藏lable
+           })
         </script>
     </form>
 </body>

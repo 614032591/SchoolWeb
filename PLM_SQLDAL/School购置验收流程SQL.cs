@@ -120,10 +120,10 @@ namespace PLM_SQLDAL
                 StringBuilder sb = new StringBuilder();
                 sb.Append("INSERT INTO X_购置验收流程表 ");
                 sb.Append(" (流程状态,单据编号,事项名称,备注信息,数量合计,金额合计,申请人,制单日期,供应商,供应商联系方式,合同编号,发票号 ");
-                sb.Append(",取得方式,购置日期,Sort");
+                sb.Append(",取得方式,购置日期,Sort,验收日期");
                 sb.Append(" ) VALUES( ");
                 sb.Append(" @流程状态,@单据编号,@事项名称,@备注信息,@数量合计,@金额合计,@申请人,@制单日期,@供应商,@供应商联系方式,@合同编号,@发票号 ");
-                sb.Append(",@取得方式,@购置日期,@Sort");
+                sb.Append(",@取得方式,@购置日期,@Sort,@验收日期");
                 sb.Append(")");
                 sb.Append(" SELECT ");
                 sb.Append(" @@identity ");
@@ -146,6 +146,7 @@ namespace PLM_SQLDAL
                                        new SqlParameter("@取得方式",model.取得方式),
                                        new SqlParameter("@购置日期",model.购置日期),                                     
                                        new SqlParameter("@Sort",1),
+                                       new SqlParameter("@验收日期",model.验收日期),
                                        //new SqlParameter("@Sort",model),
                                    };
 
@@ -212,7 +213,7 @@ namespace PLM_SQLDAL
 
 
                             //int 归属部门_ID = model_a.ID;
-                            csqls = string.Format("INSERT INTO 办公设备信息表 (编号,类型,名称,型号,使用方向,数量,价格,归属部门,负责人,存放地点,使用状态,X_ID,是否通过审批,购置日期,二级类别名称,三级类别名称) VALUES('{0}','{1}','{2}','{3}','{4}',{5},{6},{7},'{8}','{9}','{10}',{11},'{12}','{13}','{14}','{15}')", listmodel[i].编号, listmodel[i].一级类别名称, listmodel[i].名称, listmodel[i].型号, listmodel[i].使用方向, listmodel[i].数量, listmodel[i].价格, 归属部门_ID, listmodel[i].负责人, listmodel[i].存放地点, listmodel[i].资产状态, num, "否", model.购置日期,listmodel[i].二级类别名称,listmodel[i].三级类别名称);
+                            csqls = string.Format("INSERT INTO 办公设备信息表 (编号,类型,名称,型号,使用方向,数量,价格,归属部门,负责人,存放地点,使用状态,X_ID,是否通过审批,购置日期,二级类别名称,三级类别名称,一级类别名称) VALUES('{0}','{1}','{2}','{3}','{4}',{5},{6},{7},'{8}','{9}','{10}',{11},'{12}','{13}','{14}','{15}','{16}')", listmodel[i].编号, listmodel[i].一级类别名称, listmodel[i].名称, listmodel[i].型号, listmodel[i].使用方向, listmodel[i].数量, listmodel[i].价格, 归属部门_ID, listmodel[i].负责人, listmodel[i].存放地点, listmodel[i].资产状态, num, "否", model.购置日期,listmodel[i].二级类别名称,listmodel[i].三级类别名称,listmodel[i].一级类别名称);
                             cstrlist.Add(csqls.ToString());
                         }
                         int copyunitcount = DBHelper.ExecuteSqlTran(cstrlist);

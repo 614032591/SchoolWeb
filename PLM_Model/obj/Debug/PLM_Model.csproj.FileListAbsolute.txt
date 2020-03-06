@@ -62,3 +62,8 @@ G:\项目\SchoolPLM(202002170910new)\PLM_Model\bin\Debug\PLM_Model.pdb
 G:\项目\SchoolPLM(202002170910new)\PLM_Model\obj\Debug\PLM_Model.dll
 G:\项目\SchoolPLM(202002170910new)\PLM_Model\obj\Debug\PLM_Model.pdb
 G:\项目\SchoolPLM(202002170910new)\PLM_Model\obj\Debug\PLM_Model.csprojAssemblyReference.cache
+G:\SchoolWeb\PLM_Model\bin\Debug\PLM_Model.dll
+G:\SchoolWeb\PLM_Model\bin\Debug\PLM_Model.pdb
+G:\SchoolWeb\PLM_Model\obj\Debug\PLM_Model.csprojAssemblyReference.cache
+G:\SchoolWeb\PLM_Model\obj\Debug\PLM_Model.dll
+G:\SchoolWeb\PLM_Model\obj\Debug\PLM_Model.pdb

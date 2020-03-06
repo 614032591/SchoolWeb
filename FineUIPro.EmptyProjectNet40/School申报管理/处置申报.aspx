@@ -29,7 +29,7 @@
                     <Rows>
                         <f:FormRow ColumnWidth="50% 50%">
                             <Items>
-                                <f:DropDownList ID="申报种类"  Label="申报种类" AutoSelectFirstItem="true" runat="server">
+                                <f:DropDownList ID="申报种类"  Label="申报种类" AutoSelectFirstItem="true" AutoPostBack="true" OnSelectedIndexChanged="申报种类_SelectedIndexChanged" runat="server">
                                     <f:ListItem Text="全部" Value="全部" />
                                     <f:ListItem Text="报废" Value="报废" />
                                     <f:ListItem Text="调拨" Value="调拨" />
@@ -41,8 +41,8 @@
                                     ShowTrigger1="false"
                                     Trigger1Icon="Clear" Trigger2Icon="Search">
                                 </f:TwinTriggerBox>--%>
-                                <f:DropDownList ID="DropDownList1" ShowLabel="false" Label="流程状态" AutoPostBack="true"
-                                    OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" runat="server">
+                                <f:DropDownList ID="流程状态" ShowLabel="false" Label="流程状态" AutoPostBack="true"
+                                    OnSelectedIndexChanged="流程状态_SelectedIndexChanged" runat="server">
                                     <f:ListItem Text="流程状态-全部" Value="filter1" />
                                     <f:ListItem Text="流程状态-待审核" Value="filter2" />
                                     <f:ListItem Text="流程状态-已通过" Value="filter3" />
@@ -144,7 +144,7 @@
                                                 <f:ListItem Text="普通添加" Value="普通添加" />
                                                 <f:ListItem Text="盘亏处理" Value="盘亏处理" />
                                             </f:DropDownList>
-
+                                            
                                             <f:DropDownList ID="是否到期" Label="是否到期" Required="true" Width="300px" LabelWidth="120" runat="server">
                                                 <f:ListItem Text="全部" Value="全部" />
                                                 <f:ListItem Text="是" Value="是" />
@@ -206,21 +206,21 @@
                     <Rows>
                         <f:FormRow ColumnWidths="25% 25% 25% 25% ">
                             <Items>
-                                <f:TextBox ID="报废流程状态" Label="流程状态" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="报废单据编号" Label="单据编号" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="报废_申请人" Label="申请人" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="报废_申报单位" Label="申报单位" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="报废流程状态" Label="流程状态" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="报废单据编号" Label="单据编号" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="报废_申请人" Label="申请人" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="报废_申报单位" Label="申报单位" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                                 <%--<f:DropDownList ID="报废_申报单位" Width="250px" runat="server" Label="调入单位" LabelWidth="90" AutoPostBack="true" AutoSelectFirstItem="false" EmptyText="请选择！">
                                 </f:DropDownList>--%>
                             </Items>
                         </f:FormRow>
                         <f:FormRow ColumnWidths="25% 25% 25% 25%">
                             <Items>
-                                <f:TextBox ID="报废_职务" Label="职务" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="报废_电话" Label="电话" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="报废_职务" Label="职务" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="报废_电话" Label="电话" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                                 <f:TextBox ID="报废_事项名称" Label="事项名称" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
                                 <f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="申报日期" EmptyText="请选择日期"
-                                    ID="报废_申报日期" ShowRedStar="true" Width="250px" LabelWidth="90">
+                                    ID="报废_申报日期" ShowRedStar="true" Width="250px" LabelWidth="90" Readonly="true">
                                 </f:DatePicker>
 
 
@@ -288,7 +288,7 @@
         </f:Window>
 
         <%-- 固定资产处置单(调拨) --%>
-        <f:Window ID="Window3" Title="固定资产处置单(调拨)" Hidden="true" EnableIFrame="false"
+        <f:Window ID="Window3" Title="固定资产处置单(调拨)" Hidden="true" TitleAlign="Center" EnableIFrame="false"
             EnableMaximize="true" Target="Self" runat="server"
             IsModal="true" Width="1400px">
             <Items>
@@ -297,23 +297,23 @@
                     <Rows>
                         <f:FormRow ColumnWidths="25% 25% 25% 25% ">
                             <Items>
-                                <f:TextBox ID="调拨流程状态" Label="流程状态" Width="250px" runat="server" LabelWidth="90">
+                                <f:TextBox ID="调拨流程状态" Label="流程状态" Width="250px" runat="server" LabelWidth="90" Readonly="true">
                                 </f:TextBox>
-                                <f:TextBox ID="调拨单据编号" Label="单据编号" Width="250px" runat="server" LabelWidth="90">
+                                <f:TextBox ID="调拨单据编号" Label="单据编号" Width="250px" runat="server" LabelWidth="90" Readonly="true">
                                 </f:TextBox>
-                                <f:TextBox ID="调拨_申请人" Label="申请人" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="调拨调出单位" Label="调出单位" Width="250px" runat="server" LabelWidth="90">
+                                <f:TextBox ID="调拨_申请人" Label="申请人" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="调拨调出单位" Label="调出单位" Width="250px" runat="server" LabelWidth="90" Readonly="true">
                                 </f:TextBox>
                             </Items>
                         </f:FormRow>
 
                         <f:FormRow ColumnWidths="25% 25% 25% 25%">
                             <Items>
-                                <f:TextBox ID="调拨职务" Label="职务" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="调拨电话" Label="电话" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="调拨职务" Label="职务" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="调拨电话" Label="电话" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                                 <f:TextBox ID="调拨_事项名称" Label="事项名称" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
                                 <f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="申报日期" EmptyText="请选择日期"
-                                    ID="调拨申报日期" ShowRedStar="true" Width="250px" LabelWidth="90">
+                                    ID="调拨申报日期" ShowRedStar="true" Width="250px" LabelWidth="90" Readonly="true">
                                 </f:DatePicker>
 
                             </Items>
@@ -348,7 +348,7 @@
                         </f:FormRow>--%>
                     </Rows>
                 </f:Form>
-                <f:Grid ID="Grid5" Title="数据表格" PageSize="15" IsFluid="true" CssClass="blockpanel" ShowBorder="true" AllowPaging="true"
+                <f:Grid ID="Grid5" Title="数据表格" PageSize="15" IsFluid="true" CssClass="blockpanel" ShowBorder="true" AllowPaging="true"  EnableSummary="true" SummaryPosition="Bottom"
                     ShowHeader="false" runat="server" DataKeyNames="ID" Height="300px" EnableCheckBoxSelect="false" IsDatabasePaging="false">
                     <Columns>
                         <f:RowNumberField />
@@ -363,7 +363,7 @@
 
 
 
-                <f:Grid ID="Grid6" Title="数据表格" PageSize="15" IsFluid="true" CssClass="blockpanel" ShowBorder="true" AllowPaging="true"
+                <f:Grid ID="Grid6" Title="数据表格" PageSize="15" IsFluid="true" CssClass="blockpanel" ShowBorder="true" AllowPaging="true"  EnableSummary="true" SummaryPosition="Bottom"
                     ShowHeader="false" runat="server" DataKeyNames="ID" Height="300px" EnableCheckBoxSelect="false" IsDatabasePaging="false" Hidden="true">
 
                     <Columns>
@@ -406,7 +406,7 @@
 
         <%-- 待处置库报废查看详情 --%>
 
-        <f:Window ID="Window4" Title="固定资产处置单" Hidden="true" EnableIFrame="false"
+        <f:Window ID="Window4" Title="固定资产处置单" Hidden="true" TitleAlign="Center" EnableIFrame="false"
             EnableMaximize="true" Target="Self" EnableResize="true" runat="server"
             IsModal="true" Width="1400px">
             <Items>
@@ -414,10 +414,10 @@
                     <Rows>
                         <f:FormRow ColumnWidths="25% 25% 25% 25% ">
                             <Items>
-                                <f:TextBox ID="流程状态_abfckxq" Label="流程状态" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="单据编号_bfckxq" Label="单据编号" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="申请人_bfckxq" Label="申请人" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="申报单位_bfckxq" Label="申报单位" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="流程状态_abfckxq" Label="流程状态" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="单据编号_bfckxq" Label="单据编号" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="申请人_bfckxq" Label="申请人" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="申报单位_bfckxq" Label="申报单位" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                                 <%--<f:DropDownList ID="报废_申报单位" Width="250px" runat="server" Label="调入单位" LabelWidth="90" AutoPostBack="true" AutoSelectFirstItem="false" EmptyText="请选择！">
                                 </f:DropDownList>--%>
                             </Items>
@@ -425,17 +425,17 @@
 
                         <f:FormRow ColumnWidths="25% 25% 25% 25%">
                             <Items>
-                                <f:TextBox ID="职务_bfckxq" Label="职务" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="电话_bfckxq" Label="电话" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="事项名称_bfckxq" Label="事项名称" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="职务_bfckxq" Label="职务" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="电话_bfckxq" Label="电话" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="事项名称_bfckxq" Label="事项名称" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                                 <f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="申报日期" EmptyText="请选择日期"
-                                    ID="申报日期_ckxq" ShowRedStar="true" Width="250px" LabelWidth="90">
+                                    ID="申报日期_ckxq" ShowRedStar="true" Width="250px" LabelWidth="90" Readonly="true">
                                 </f:DatePicker>
                             </Items>
                         </f:FormRow>
                         <f:FormRow ColumnWidths="25% 10%">
                             <Items>
-                                <f:TextBox ID="原因说明_bfckxq" Label="原因说明" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="原因说明_bfckxq" Label="原因说明" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                                 <f:RadioButtonList ID="RadioButtonList3" AutoPostBack="true" AutoColumnWidth="false" runat="server" OnSelectedIndexChanged="RadioButtonList3_SelectedIndexChanged">
                                     <f:RadioItem Text="处置单" Selected="true" Value="处置单" />
                                     <f:RadioItem Text="明细表" Value="明细表" />
@@ -484,9 +484,9 @@
                         <f:FormRow ColumnWidths="10% 25% 25% 25% ">
                             <Items>
                                 <f:Label Text="分管领导" runat="server"></f:Label>
-                                <f:TextBox ID="分管领导处理意见_bfckxq" Label="处理意见" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="分管领导_bfckxq" Label="分管领导" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="分管领导操作时间_bfckxq" Label="操作时间" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="分管领导处理意见_bfckxq" Label="处理意见" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="分管领导_bfckxq" Label="分管领导" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="分管领导操作时间_bfckxq" Label="操作时间" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                                 <%--<f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="操作时间" EmptyText="请选择日期"
                                     ID="分管领导操作时间_bfckxq" ShowRedStar="true" Width="250px" LabelWidth="90">
                                 </f:DatePicker>--%>
@@ -507,9 +507,9 @@
                         <f:FormRow ColumnWidths="10% 25% 25% 25% ">
                             <Items>
                                 <f:Label Text="主管部门" runat="server"></f:Label>
-                                <f:TextBox ID="主管部门处理意见_bfckxq" Label="处理意见" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="主管部门_bfckxq" Label="操作人" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="主管部门操作时间_bfckxq" Label="操作时间" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="主管部门处理意见_bfckxq" Label="处理意见" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="主管部门_bfckxq" Label="操作人" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="主管部门操作时间_bfckxq" Label="操作时间" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                                 <%-- <f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="操作时间" EmptyText="请选择日期"
                                     ID="主管部门操作时间_bfckxq" ShowRedStar="true" Width="250px" LabelWidth="90">
                                 </f:DatePicker>--%>
@@ -519,9 +519,9 @@
                         <f:FormRow ColumnWidths="10% 25% 25% 25% ">
                             <Items>
                                 <f:Label Text="财政部门" runat="server"></f:Label>
-                                <f:TextBox ID="财政部门意见_bfckxq" Label="处理意见" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="财政部门_bfckxq" Label="操作人" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="财政部门操作时间_bfckxq" Label="操作时间" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="财政部门意见_bfckxq" Label="处理意见" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="财政部门_bfckxq" Label="操作人" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="财政部门操作时间_bfckxq" Label="操作时间" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                                 <%--<f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="操作时间" EmptyText="请选择日期"
                                     ID="财政部门操作时间_bfckxq" ShowRedStar="true" Width="250px" LabelWidth="90">
                                 </f:DatePicker>--%>
@@ -550,7 +550,7 @@
 
         <%-- 待处置库调拨查看详情 --%>
 
-        <f:Window ID="Window5" Title="固定资产处置单" Hidden="true" EnableIFrame="false"
+        <f:Window ID="Window5" Title="固定资产处置单" Hidden="true" TitleAlign="Center" EnableIFrame="false"
             EnableMaximize="true" Target="Self" EnableResize="true" runat="server"
             IsModal="true" Width="1400px">
             <Items>
@@ -560,14 +560,14 @@
                     <Rows>
                         <f:FormRow ColumnWidths="25% 25% 25% 25% ">
                             <Items>
-                                <f:TextBox ID="流程状态_dbckxq" Label="流程状态" Width="250px" runat="server" LabelWidth="90">
+                                <f:TextBox ID="流程状态_dbckxq" Label="流程状态" Width="250px" runat="server" LabelWidth="90" Readonly="true">
                                 </f:TextBox>
 
-                                <f:TextBox ID="单据编号_dbckxq" Label="单据编号" Width="250px" runat="server" LabelWidth="90">
+                                <f:TextBox ID="单据编号_dbckxq" Label="单据编号" Width="250px" runat="server" LabelWidth="90" Readonly="true">
                                 </f:TextBox>
 
-                                <f:TextBox ID="申请人_dbckxq" Label="申请人" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="调出单位_dbckxq" Label="调出单位" Width="250px" runat="server" LabelWidth="90">
+                                <f:TextBox ID="申请人_dbckxq" Label="申请人" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="调出单位_dbckxq" Label="调出单位" Width="250px" runat="server" LabelWidth="90" Readonly="true">
                                 </f:TextBox>
                             </Items>
                         </f:FormRow>
@@ -575,11 +575,11 @@
                         <f:FormRow ColumnWidths="25% 25% 25% 25%">
                             <Items>
 
-                                <f:TextBox ID="职务_dbckxq" Label="职务" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="电话_dbckxq" Label="电话" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="事项名称_dbckxq" Label="事项名称" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="职务_dbckxq" Label="职务" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="电话_dbckxq" Label="电话" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="事项名称_dbckxq" Label="事项名称" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                                 <f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="申报日期" EmptyText="请选择日期"
-                                    ID="申报日期_dbckxq" ShowRedStar="true" Width="250px" LabelWidth="90">
+                                    ID="申报日期_dbckxq" ShowRedStar="true" Width="250px" LabelWidth="90" Readonly="true">
                                 </f:DatePicker>
                             </Items>
                         </f:FormRow>
@@ -588,9 +588,9 @@
                         <f:FormRow ColumnWidths="25% 25% 10% ">
                             <Items>
 
-                                <f:TextBox ID="调入单位_dbckxq" Label="调入单位" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="调入单位_dbckxq" Label="调入单位" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                                 <f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="验收日期" EmptyText="请选择日期"
-                                    ID="验收日期_dbckxq" ShowRedStar="true" Width="250px" LabelWidth="90">
+                                    ID="验收日期_dbckxq" ShowRedStar="true" Width="250px" LabelWidth="90" Readonly="true">
                                 </f:DatePicker>
                                 <f:RadioButtonList ID="RadioButtonList1" AutoPostBack="true" AutoColumnWidth="false" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged">
                                     <f:RadioItem Text="处置单" Selected="true" Value="处置单" />
@@ -643,45 +643,45 @@
                         <f:FormRow ColumnWidths="10% 25% 25% 25% ">
                             <Items>
                                 <f:Label Text="调出单位分管领导" runat="server"></f:Label>
-                                <f:TextBox ID="调出单位分管领导意见" Label="处理意见" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="调出单位分管领导" Label="分管领导" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="调出单位分管领导处理时间" Label="操作日期" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="调出单位分管领导意见" Label="处理意见" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="调出单位分管领导" Label="分管领导" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="调出单位分管领导处理时间" Label="操作日期" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                             </Items>
                         </f:FormRow>
 
                         <f:FormRow ColumnWidths="10% 25% 25% 25% ">
                             <Items>
                                 <f:Label Text="调入单位管理员" runat="server"></f:Label>
-                                <f:TextBox ID="调入单位管理员意见" Label="处理意见" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="调入单位管理员" Label="分管领导" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="调入单位管理员处理时间" Label="操作日期" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="调入单位管理员意见" Label="处理意见" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="调入单位管理员" Label="分管领导" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="调入单位管理员处理时间" Label="操作日期" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                             </Items>
                         </f:FormRow>
 
                         <f:FormRow ColumnWidths="10% 25% 25% 25% ">
                             <Items>
                                 <f:Label Text="调入单位分管领导" runat="server"></f:Label>
-                                <f:TextBox ID="调入单位分管领导意见" Label="处理意见" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="调入单位分管领导" Label="分管领导" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="调入单位分管领导处理时间" Label="操作日期" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="调入单位分管领导意见" Label="处理意见" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="调入单位分管领导" Label="分管领导" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="调入单位分管领导处理时间" Label="操作日期" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                             </Items>
                         </f:FormRow>
 
                         <f:FormRow ColumnWidths="10% 25% 25% 25% ">
                             <Items>
                                 <f:Label Text="主管部门" runat="server"></f:Label>
-                                <f:TextBox ID="调拨主管部门意见" Label="处理意见" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="主管部门" Label="操作人" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="主管部门处理时间" Label="操作日期" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="调拨主管部门意见" Label="处理意见" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="主管部门" Label="操作人" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="主管部门处理时间" Label="操作日期" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                             </Items>
                         </f:FormRow>
 
                         <f:FormRow ColumnWidths="10% 25% 25% 25% ">
                             <Items>
                                 <f:Label Text="财政部门" runat="server"></f:Label>
-                                <f:TextBox ID="调拨财政部门意见" Label="处理意见" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="财政部门" Label="操作人" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
-                                <f:TextBox ID="财政部门处理时间" Label="操作日期" Width="250px" runat="server" LabelWidth="90"></f:TextBox>
+                                <f:TextBox ID="调拨财政部门意见" Label="处理意见" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="财政部门" Label="操作人" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
+                                <f:TextBox ID="财政部门处理时间" Label="操作日期" Width="250px" runat="server" LabelWidth="90" Readonly="true"></f:TextBox>
                             </Items>
                         </f:FormRow>
 

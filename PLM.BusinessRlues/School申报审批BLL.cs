@@ -12,14 +12,14 @@ namespace PLM.BusinessRlues
     {
         School申报审批SQL sql = new School申报审批SQL();
 
-        public DataSet 首页_X_资产处置流程表(string state)
+        public DataSet 首页_X_资产处置流程表(string state, string declareTypes)
         {
-            return sql.首页_X_资产处置流程表(state);
+            return sql.首页_X_资产处置流程表(state, declareTypes);
         }
 
-        public DataSet 待处置库查询(string state)
+        public DataSet 待处置库查询(string state, string purchaseTime)
         {
-            return sql.待处置库查询(state);
+            return sql.待处置库查询(state,purchaseTime);
         }
 
         public List<School办公设备信息表> 资产申报确定设备(List<int> listid, string 处置方式)
