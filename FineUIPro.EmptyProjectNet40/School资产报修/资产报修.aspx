@@ -48,14 +48,15 @@
                                         <f:RadioItem Text="报修大厅" Selected="true" Value="报修大厅" />
                                         <f:RadioItem Text="我的报修" Value="我的报修" />
                                     </f:RadioButtonList>
-                                    <f:Button ID="Button1" Text="发起报修" runat="server" OnClick="Button9_Click" IconUrl="../res/icon/add.png">
+                                    <f:Button ID="Button1" Hidden="true" Text="发起报修" runat="server" OnClick="Button9_Click" IconUrl="../res/icon/add.png">
                                     </f:Button>
                                     <f:DropDownList ID="DropDownList1" runat="server" AutoSelectFirstItem="false" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged1" Label="流程状态筛选" LabelWidth="110" Width="250px" EmptyText="全部" AutoPostBack="true">
                                         <f:ListItem Text="全部" Value="filter1" />
-                                        <f:ListItem Text="待派单" Value="filter2" />
-                                        <f:ListItem Text="维修中" Value="filter3" />
-                                        <f:ListItem Text="维修完成" Value="filter4" />
+                                        <f:ListItem Text="已报修，待派单" Value="filter2" />
+                                        <f:ListItem Text="已派单，维修中" Value="filter3" />
+                                        <f:ListItem Text="已完工，待反馈" Value="filter4" />
                                         <f:ListItem Text="已完成" Value="filter5" />
+                                        <f:ListItem Text="已退回" Value="filter6" />
                                     </f:DropDownList>
                                 </Items>
                             </f:FormRow>
@@ -124,7 +125,7 @@
                                                         <f:RenderField ColumnID="类型" DataField="类型" HeaderText="资产分类"></f:RenderField>
                                                         <f:RenderField ColumnID="名称" DataField="名称" HeaderText="资产名称"></f:RenderField>
                                                         <f:RenderField ColumnID="型号" DataField="型号" HeaderText="规格型号"></f:RenderField>
-                                                       
+
                                                         <f:RenderField ColumnID="数量" DataField="数量" Hidden="true" HeaderText="数量" />
                                                         <f:RenderField ColumnID="价格" DataField="价格" Hidden="true" HeaderText="价格" />
                                                         <f:RenderField ColumnID="房间名称" DataField="房间名称" HeaderText="存放地点" />
@@ -144,8 +145,8 @@
                                                                             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  
                                                                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
                                                                             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
-                                                                             <f:TextBox runat="server" Label="联系电话" Required="true" ID="联系电话" Width="300px" LabelWidth="120"></f:TextBox>
-                                                            <f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="报修时间" EmptyText="报修时间"
+                                                                             <f:TextBox runat="server" Label="联系电话" Readonly="true" Required="true" ID="联系电话" Width="300px" LabelWidth="120"></f:TextBox>
+                                                            <f:DatePicker runat="server" Required="true" Readonly="true" DateFormatString="yyyy-MM-dd" Label="报修时间" EmptyText="报修时间"
                                                                 ID="报修时间2" ShowRedStar="true" Width="300px" LabelWidth="120">
                                                             </f:DatePicker>
                                                             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
@@ -163,12 +164,12 @@
                                                                     <f:DropDownList ID="房间1" Label="房间" Required="true" Width="300px" LabelWidth="120" AutoPostBack="true" runat="server">
                                                                     </f:DropDownList>
 
-                                                            <f:TextBox runat="server" Required="true" Label="故障描述" ID="故障描述" Width="600px" LabelWidth="120" EmptyText="请输入故障描述!"></f:TextBox>
+                                                            <f:TextBox runat="server" Label="故障描述" ID="故障描述" Width="600px" LabelWidth="120" EmptyText="请输入故障描述!"></f:TextBox>
                                                             <%--  <f:TextBox runat="server" Label="申请日期" ID="申请日期" Width="300px" LabelWidth="120"></f:TextBox>--%>
 
                                                             <br />
                                                             <f:Image runat="server" Hidden="true" ID="imgPhoto"></f:Image>
-                                                            <f:TextBox runat="server" Hidden="true" ID="cundi" ></f:TextBox>
+                                                            <f:TextBox runat="server" Hidden="true" ID="cundi"></f:TextBox>
                                                             <f:FileUpload runat="server" ID="filePhoto" ShowRedStar="false" ShowEmptyLabel="true" Label="上传图片"
                                                                 ButtonText="上传图片" Required="false" ButtonIcon="ImageAdd" ShowLabel="true" LabelWidth="120" Width="600"
                                                                 AutoPostBack="true" OnFileSelected="filePhoto_FileSelected">
@@ -227,7 +228,7 @@
                                                     <f:RenderField ColumnID="编号" DataField="编号" HeaderText="资产编号"></f:RenderField>
                                                     <f:RenderField ColumnID="一级类别名称" DataField="一级类别名称" HeaderText="资产分类"></f:RenderField>
                                                     <f:RenderField ColumnID="名称" DataField="名称" HeaderText="资产名称"></f:RenderField>
-                                                    <f:RenderField ColumnID="型号" DataField="型号" HeaderText="资产型号"></f:RenderField>                                       
+                                                    <f:RenderField ColumnID="型号" DataField="型号" HeaderText="资产型号"></f:RenderField>
                                                     <f:RenderField ColumnID="数量" DataField="数量" HeaderText="数量" />
                                                     <f:RenderField ColumnID="价格" Hidden="true" DataField="价格" HeaderText="价格" />
                                                     <f:RenderField ColumnID="房间名称" DataField="房间名称" HeaderText="存放地点" />
@@ -247,17 +248,17 @@
                                                 <f:TextBox runat="server" MarginLeft="30" Label="报修单号" Readonly="true" ID="查看单号" Width="270" LabelWidth="80"></f:TextBox>
                                                 <f:TextBox runat="server" MarginLeft="30" Label="报修地址" Readonly="true" ID="查看报修地址" Width="270" LabelWidth="80"></f:TextBox>
                                                 <f:TextBox runat="server" Label="维修人员" Readonly="true" ID="TextBox5" Width="250" LabelWidth="80"></f:TextBox>
-                                                <f:TextBox runat="server"  MarginLeft="30" Label="解决时间" Readonly="true" ID="TextBox6" Width="270" LabelWidth="80"></f:TextBox>
-                                                <f:TextBox runat="server"  MarginLeft="30" Label="管理员" Readonly="true" ID="TextBox8" Width="270" LabelWidth="80"></f:TextBox>
-                                                <f:TextBox runat="server"  MarginLeft="30" Label="派单时间" Readonly="true" ID="TextBox9" Width="270" LabelWidth="80"></f:TextBox>
+                                                <f:TextBox runat="server" MarginLeft="30" Label="解决时间" Readonly="true" ID="TextBox6" Width="270" LabelWidth="80"></f:TextBox>
+                                                <f:TextBox runat="server" MarginLeft="30" Label="管理员" Readonly="true" ID="TextBox8" Width="270" LabelWidth="80"></f:TextBox>
+                                                <f:TextBox runat="server" MarginLeft="30" Label="派单时间" Readonly="true" ID="TextBox9" Width="270" LabelWidth="80"></f:TextBox>
                                                 <f:TextBox runat="server" Label="报修人电话" Readonly="true" ID="TextBox10" Width="250" LabelWidth="89"></f:TextBox>
                                                 <f:TextBox runat="server" MarginLeft="15" Label="维修人电话" Readonly="true" ID="TextBox11" Width="270" LabelWidth="98"></f:TextBox>
-                                                <f:TextBox runat="server" MarginLeft="15"  Label="管理员电话" Readonly="true" ID="TextBox12" Width="270" LabelWidth="92"></f:TextBox>
+                                                <f:TextBox runat="server" MarginLeft="15" Label="管理员电话" Readonly="true" ID="TextBox12" Width="270" LabelWidth="92"></f:TextBox>
                                                 <f:Button ID="查看图片" MarginLeft="110" Width="270" IconUrl="../res/icon/bullet_magnify.png" CssStyle="position:absolute; top:122px;" runat="server" OnClick="查看图片_Click" Text="查看图片">
                                                 </f:Button>
                                                 <f:TextBox runat="server" Label="故障原因" ID="查看故障描述" Readonly="true" Width="522px" LabelWidth="80"></f:TextBox>
-                                                 <f:TextBox runat="server" MarginLeft="30" Label="结果反馈" Readonly="true" ID="TextBox13" Width="542" LabelWidth="80"></f:TextBox>
-                                                
+                                                <f:TextBox runat="server" MarginLeft="30" Label="结果反馈" Readonly="true" ID="TextBox13" Width="542" LabelWidth="80"></f:TextBox>
+
 
                                                 <%--  <f:TextBox runat="server" Label="申请日期" ID="申请日期" Width="300px" LabelWidth="120"></f:TextBox>--%>
                                                 <f:Label ID="xx" Text="" runat="server" Hidden="true"></f:Label>
@@ -299,20 +300,29 @@
                     </f:SimpleForm>
                 </Items>
             </f:Window>
-            <f:Window ID="Window4" Title="维修信息" Hidden="true" EnableIFrame="false" EnableMaximize="true" Target="Self" EnableResize="true" runat="server"
+            <f:Window ID="Window4" Title="派单" TitleAlign="Center" Hidden="true" EnableIFrame="false" EnableMaximize="true" Target="Self" EnableResize="true" runat="server"
                 IsModal="true" BodyPadding="20">
                 <Items>
                     <f:ContentPanel runat="server" Title="维修信息" ShowHeader="false" ShowBorder="false">
                         <%--     <f:Label ID="Label1" ShowLabel="false" runat="server" CssClass="red"></f:Label>--%>
                         <br />
-                        <f:TextBox runat="server" Label="管理员" Readonly="true" ID="TextBox4" Width="300px" LabelWidth="120"></f:TextBox>
+                        <f:TextBox runat="server" Label="请选择维修人员，已选择" Readonly="true" ID="TextBox4" Width="300px" LabelWidth="120"></f:TextBox>
                         <br />
-                        <f:DropDownList ID="DropDownList3" runat="server" Label="维修人员:" EnableMultiSelect="true" Required="true" LabelWidth="120" Width="300" EmptyText="请选择维修人员" AutoPostBack="true">
-                        </f:DropDownList>
+                        <f:Grid ID="Grid5"  IsFluid="true" CssClass="blockpanel" ShowBorder="true" BoxFlex="1" AllowPaging="false" IsDatabasePaging="false"
+                        ShowHeader="false" runat="server" DataKeyNames="ID,姓名,电话号码" EnableCheckBoxSelect="false" Height="200px" KeepCurrentSelection="true"
+                             EnableRowClickEvent="true"
+                            EnableRowDoubleClickEvent="true"  OnRowClick="Grid5_RowClick" EnableMultiSelect="false">
+                            <Columns>                                
+                                <f:RenderField ColumnID="ID" DataField="ID" HeaderText="ID" Hidden="true"></f:RenderField>
+                                <f:RenderField ColumnID="姓名" DataField="姓名" HeaderText="姓名"></f:RenderField>
+                                <f:RenderField ColumnID="电话号码" DataField="电话号码" HeaderText="电话" ExpandUnusedSpace="true"></f:RenderField>
+                            </Columns>
+                        </f:Grid>
+                        
+                        <f:TextBox runat="server" Label="请选择维修人员，已选择" Readonly="true" Hidden="true" ID="TextBox7" Width="300px" LabelWidth="120"></f:TextBox>
+                       
                         <br />
-                        <f:TextBox runat="server" Label="联系电话" ID="TextBox7" Width="300px" LabelWidth="120"></f:TextBox>
-                        <br />
-                        <f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="派单时间"
+                        <f:DatePicker runat="server" Readonly="true" Required="true" DateFormatString="yyyy-MM-dd" Label="派单时间"
                             ID="DatePicker1" ShowRedStar="true" Width="300px" LabelWidth="120">
                         </f:DatePicker>
                     </f:ContentPanel>
@@ -335,7 +345,7 @@
                         <%--     <f:Label ID="Label1" ShowLabel="false" runat="server" CssClass="red"></f:Label>--%>
                         <br />
                         <f:TextBox runat="server" Label="维修人" ID="TextBox2" Readonly="true" Width="300px" LabelWidth="120"></f:TextBox>
-                        <f:TextBox runat="server" Label="联系电话" ID="TextBox1" Width="300px" LabelWidth="120"></f:TextBox>
+                        <f:TextBox runat="server" Label="联系电话" ID="TextBox1" Readonly="true" Width="300px" LabelWidth="120"></f:TextBox>
                         <br />
                         <f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="完成时间"
                             ID="完成时间" ShowRedStar="true" Width="300px" LabelWidth="120">
@@ -458,7 +468,8 @@
 
                         </Items>
                     </f:GroupPanel>
-                    <f:Grid ID="Grid4" Title="数据表格" PageSize="15" IsFluid="true" CssClass="blockpanel" ShowBorder="true" BoxFlex="1" AllowPaging="true" IsDatabasePaging="false"
+                    <f:Grid ID="Grid4" Title="数据表格" PageSize="15" IsFluid="true" CssClass="blockpanel" ShowBorder="true" BoxFlex="1" AllowPaging="true"
+                        IsDatabasePaging="false"
                         ShowHeader="true" runat="server" DataKeyNames="ID" EnableCheckBoxSelect="true" Height="400px" KeepCurrentSelection="true">
 
                         <Columns>

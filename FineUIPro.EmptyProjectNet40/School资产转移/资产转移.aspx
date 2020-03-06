@@ -118,9 +118,9 @@
                                                     <f:RenderField ColumnID="使用方向" DataField="使用方向" HeaderText="使用方向"></f:RenderField>
                                                     <f:RenderField ColumnID="数量" DataField="数量" HeaderText="数量" />
                                                     <f:RenderField ColumnID="价格" DataField="价格" HeaderText="原值" />
-                                                    <f:RenderField ColumnID="房间名称" DataField="房间名称" HeaderText="原存放地点" />
-                                                    <f:RenderField ColumnID="部门名称" DataField="部门名称" HeaderText="原归属部门" />
-                                                    <f:RenderField ColumnID="负责人" DataField="负责人" HeaderText="原负责人" />
+                                                    <f:RenderField ColumnID="房间名称" DataField="房间名称" HeaderText="存放地点" />
+                                                    <f:RenderField ColumnID="部门名称" DataField="部门名称" HeaderText="归属部门" />
+                                                    <f:RenderField ColumnID="负责人" DataField="负责人" HeaderText="负责人" />
                                                     <f:RenderField ColumnID="资产状态" DataField="资产状态" HeaderText="资产状态"></f:RenderField>
                                                     <%--  <f:LinkButtonField CommandName="Action1" Text="删除" Icon="Delete" />--%>
                                                 </Columns>
@@ -172,7 +172,7 @@
                     <Items>
                         <f:Panel ID="Panel3" runat="server" Layout="HBox" ShowBorder="false" ShowHeader="false">
                             <Items>
-                                <f:ContentPanel runat="server" Title="asd" ShowHeader="False">
+                                <f:ContentPanel runat="server" Title="asd" ShowBorder="false" ShowHeader="False">
                                     <f:Label ID="Label2" runat="server" Label="资产分类"></f:Label>
 
                                     <f:DropDownList ID="一级" Width="250px" runat="server" Label="一级" LabelWidth="60" AutoPostBack="true" EmptyText="全部" OnSelectedIndexChanged="一级_SelectedIndexChanged">
@@ -189,7 +189,7 @@
 
                         <f:Panel ID="Panel1" runat="server" Layout="HBox" ShowBorder="false" ShowHeader="false">
                             <Items>
-                                <f:ContentPanel runat="server" Title="asd" ShowHeader="False">
+                                <f:ContentPanel runat="server" Title="asd" ShowBorder="false" ShowHeader="False">
                                     <f:Label ID="Label1" runat="server" Label="归属信息/存放地点" LabelWidth="140"></f:Label>
                                     <f:DropDownList ID="部门" AutoPostBack="true" Width="230px" runat="server" Label="部门" LabelWidth="60" EmptyText="全部" OnSelectedIndexChanged="部门_SelectedIndexChanged">
                                     </f:DropDownList>
@@ -208,7 +208,7 @@
 
                         <f:Panel ID="Panel2" runat="server" Layout="HBox" ShowBorder="false" ShowHeader="false">
                             <Items>
-                                <f:ContentPanel runat="server" Title="asd" ShowHeader="False">
+                                <f:ContentPanel runat="server" Title="asd" ShowBorder="false" ShowHeader="False">
                                     <f:Label ID="Label3" runat="server" Label="投入时间/关键字" LabelWidth="140"></f:Label>
                                     <f:DatePicker runat="server" DateFormatString="yyyy-MM-dd" Label="起始投入日期"
                                         ID="起始投入日期" ShowRedStar="true" Width="300px" LabelWidth="120" EmptyText="请输入日期">
@@ -227,7 +227,7 @@
                         </f:Panel>
                         <f:Panel ID="Panel5" runat="server" Layout="HBox" ShowBorder="false" ShowHeader="false">
                             <Items>
-                                <f:ContentPanel runat="server" Title="asd" ShowHeader="False">
+                                <f:ContentPanel runat="server" Title="asd" ShowBorder="false" ShowHeader="False">
                                     <f:Button ID="Button4" Text="确认查询" IconUrl="../res/icon/application_form_magnify.png" runat="server" CssClass="marginr" OnClick="Button4_Click" />
                                     &nbsp &nbsp
                                     <f:Button ID="Button5" Text="确认添加" Icon="Add" runat="server" CssClass="marginr" OnClick="Button5_Click" />
@@ -253,9 +253,9 @@
                         <f:RenderField ColumnID="使用方向" DataField="使用方向" HeaderText="使用方向"></f:RenderField>
                         <f:RenderField ColumnID="数量" DataField="数量" HeaderText="数量" />
                         <f:RenderField ColumnID="价格" DataField="价格" HeaderText="原值" />
-                        <f:RenderField ColumnID="房间名称" DataField="房间名称" HeaderText="原存放地点" />
-                        <f:RenderField ColumnID="部门名称" DataField="部门名称" HeaderText="原归属部门" />
-                        <f:RenderField ColumnID="负责人" DataField="负责人" HeaderText="原负责人" />
+                        <f:RenderField ColumnID="房间名称" DataField="房间名称" HeaderText="存放地点" />
+                        <f:RenderField ColumnID="部门名称" DataField="部门名称" HeaderText="归属部门" />
+                        <f:RenderField ColumnID="负责人" DataField="负责人" HeaderText="负责人" />
                         <f:RenderField ColumnID="资产状态" DataField="资产状态" HeaderText="资产状态"></f:RenderField>
 
 
@@ -323,9 +323,9 @@
                                 <f:RenderField ColumnID="数量" DataField="数量" HeaderText="数量"></f:RenderField>
                                 <f:RenderField ColumnID="价格" DataField="价格" HeaderText="价格"></f:RenderField>
                                 <f:RenderField ColumnID="资产状态" DataField="资产状态" HeaderText="资产状态"></f:RenderField>
-                                <f:RenderField ColumnID="原存放地点" DataField="原存放地点" HeaderText="原存放地点"></f:RenderField>
-                                <f:RenderField ColumnID="原归属部门" DataField="原归属部门" HeaderText="原归属部门"></f:RenderField>
-                                <f:RenderField ColumnID="原负责人" DataField="原负责人" HeaderText="原负责人"></f:RenderField>
+                                <f:RenderField ColumnID="原存放地点" DataField="原存放地点" HeaderText="存放地点"></f:RenderField>
+                                <f:RenderField ColumnID="原归属部门" DataField="原归属部门" HeaderText="归属部门"></f:RenderField>
+                                <f:RenderField ColumnID="原负责人" DataField="原负责人" HeaderText="负责人"></f:RenderField>
 
                             </Columns>
 

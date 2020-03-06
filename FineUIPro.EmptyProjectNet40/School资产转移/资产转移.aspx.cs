@@ -372,10 +372,10 @@ namespace FineUIPro.EmptyProjectNet40.资产转移
 
             ammodel.发起时间 = DateTime.Now;
             ammodel.是否已读 = "否";
-            ammodel.通知类型 = "结果通知";
+            ammodel.通知类型 = "结果反馈通知";
             ammodel.通知职务 = "资产管理员";
             ammodel.发起人 = username;
-            ammodel.消息内容 = "您来自" + ammodel.发起人 + "的资产转移结果通知！";
+            ammodel.消息内容 = "您来自" + ammodel.发起人 + "的资产转移已完成！";
             ammodel.消息事项 = "资产转移";
             ammodel.是否已读 = "否";
             AM_待办业务 dbmodel = new AM_待办业务();
@@ -383,7 +383,7 @@ namespace FineUIPro.EmptyProjectNet40.资产转移
             dbmodel.处理职务 = "资产管理员";
             dbmodel.流程状态 = "已完成";
             dbmodel.发起人 = ammodel.发起人;
-            dbmodel.通知内容 = "您来自" + dbmodel.发起人 + "的资产转移结果通知！";
+            dbmodel.通知内容 = "您来自" + dbmodel.发起人 + "的资产转移已完成！";
             dbmodel.发起时间 = DateTime.Now.ToLongDateString();
             dbmodel.Sort = 0;
 

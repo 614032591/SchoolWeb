@@ -51,7 +51,7 @@
                                     </f:Button>
                                     <f:DropDownList ID="DropDownList1" runat="server" AutoSelectFirstItem="false" LabelWidth="110" Width="250px" EmptyText="全部" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                                         <f:ListItem Text="全部" Value="全部" />
-                                        <f:ListItem Text="已提交" Value="已提交" />
+                                        <f:ListItem Text="已提交,未出借" Value="已提交" />
                                         <f:ListItem Text="已出借,待归还" Value="已出借,待归还" />
                                         <f:ListItem Text="已归还,待确认" Value="已归还,待确认" />
                                         <f:ListItem Text="完成" Value="完成" />
@@ -75,8 +75,8 @@
                             <f:RowNumberField />
                             <f:RenderField ColumnID="ID" DataField="ID" HeaderText="ID" Hidden="true"></f:RenderField>
                             <f:RenderField ColumnID="流程状态" DataField="流程状态" HeaderText="流程状态"></f:RenderField>
-                            <f:RenderField ColumnID="单据编号" DataField="单据编号" HeaderText="单据编号"></f:RenderField>
-                            <%--<f:RenderField ColumnID="资产数量" DataField="资产数量" HeaderText="资产数量"></f:RenderField>--%>
+                            <f:RenderField ColumnID="单据编号" DataField="单据编号" HeaderText="单据编号" Width ="150"></f:RenderField>
+                            <f:RenderField ColumnID="资产数量" DataField="资产数量" HeaderText="资产数量"></f:RenderField>
                             <f:RenderField ColumnID="借用人" DataField="借用人" HeaderText="借用人"></f:RenderField>
                             <f:RenderField ColumnID="借出人" DataField="借出人" HeaderText="借出人"></f:RenderField>
                             <f:RenderField ColumnID="提交时间" DataField="提交时间" HeaderText="提交时间" />
@@ -154,12 +154,12 @@
                             <f:RenderField ColumnID="名称" DataField="名称" HeaderText="资产名称"></f:RenderField>
                             <f:RenderField ColumnID="型号" DataField="型号" HeaderText="规格型号"></f:RenderField>
                             <f:RenderField ColumnID="使用方向" DataField="使用方向" Hidden="true" HeaderText="使用方向"></f:RenderField>
-                            <f:RenderField ColumnID="数量" DataField="数量" Hidden="true" HeaderText="数量" />
-                            <f:RenderField ColumnID="价格" DataField="价格" Hidden="true" HeaderText="价格" />
+                            <f:RenderField ColumnID="数量" DataField="数量" Hidden="false" HeaderText="数量" />
+                            <f:RenderField ColumnID="价格" DataField="价格" Hidden="false" HeaderText="原值" />
                             <f:RenderField ColumnID="房间名称" DataField="房间名称" HeaderText="存放地点" />
                             <f:RenderField ColumnID="部门名称" DataField="部门名称" HeaderText="归属部门" />
                             <f:RenderField ColumnID="负责人" DataField="负责人" HeaderText="负责人" />
-                            <%-- <f:RenderField ColumnID="资产状态" DataField="资产状态" HeaderText="资产状态"></f:RenderField>--%>
+                           <f:RenderField ColumnID="资产状态" DataField="资产状态" HeaderText="资产状态"></f:RenderField>
                         </Columns>
                     </f:Grid>
 
@@ -286,21 +286,21 @@
 
 
                     <f:Grid ID="Grid3" IsFluid="true" Title="资产借还资产数据" CssClass="blockpanel" ShowBorder="true" IsDatabasePaging="false"
-                        ShowHeader="false" runat="server" EnableCheckBoxSelect="false" Height="250px">
+                        ShowHeader="false" runat="server" EnableCheckBoxSelect="false" Height="250px" Width="1100" >
 
                         <Columns>
                             <f:RowNumberField />
                             <f:RenderField ColumnID="ID" DataField="ID" HeaderText="ID" Hidden="true"></f:RenderField>
-                            <f:RenderField ColumnID="编号" DataField="编号" HeaderText="资产编号"></f:RenderField>
+                            <f:RenderField ColumnID="编号" DataField="编号" HeaderText="资产编号" Width="150"></f:RenderField>
                             <f:RenderField ColumnID="类型" DataField="类型" HeaderText="资产分类"></f:RenderField>
-                            <f:RenderField ColumnID="名称" DataField="名称" HeaderText="资产名称"></f:RenderField>
+                            <f:RenderField ColumnID="名称" DataField="名称" HeaderText="资产名称"  Width="150"></f:RenderField>
                             <f:RenderField ColumnID="型号" DataField="型号" HeaderText="规格型号"></f:RenderField>
                             <f:RenderField ColumnID="使用方向" DataField="使用方向" Hidden="true" HeaderText="使用方向"></f:RenderField>
                             <f:RenderField ColumnID="数量" DataField="数量" Hidden="true" HeaderText="数量" />
                             <f:RenderField ColumnID="价格" DataField="价格" Hidden="true" HeaderText="价格" />
                             <f:RenderField ColumnID="房间名称" DataField="房间名称" HeaderText="存放地点" />
                             <f:RenderField ColumnID="部门名称" DataField="部门名称" HeaderText="归属部门" />
-                            <f:RenderField ColumnID="负责人" DataField="负责人" HeaderText="负责人" />
+                            <f:RenderField ColumnID="负责人" DataField="负责人" HeaderText="负责人" ExpandUnusedSpace="true" />
                             <%-- <f:RenderField ColumnID="资产状态" DataField="资产状态" HeaderText="资产状态"></f:RenderField>--%>
                         </Columns>
                     </f:Grid>

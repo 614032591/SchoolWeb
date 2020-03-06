@@ -14,7 +14,7 @@ namespace PLM_SQLDAL
         public 用户表 UserLogin(用户表 au) 
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("SELECT A.ID, A.用户名,A.权限,A.姓名,A.部门ID,A.学校ID,A.职务,A.人员照片,C.名称 as 部门名称,C.名称 as 学校名称 FROM 用户表 as a");
+            sb.Append("SELECT A.ID, A.用户名,A.权限,A.姓名,A.部门ID,A.学校ID,A.职务,A.电话号码,A.人员照片,C.名称 as 部门名称,C.名称 as 学校名称 FROM 用户表 as a");
             sb.Append(" INNER   join 一级部门表    as c ON a.部门ID=c.ID ");
             sb.Append("INNER JOIN 学校名称表 as s ON c.学校ID =  s.ID");
             sb.Append("    where (A.用户名=@username and A.密码 =@userpassword)");
@@ -33,6 +33,7 @@ namespace PLM_SQLDAL
                 csuser.人员照片 = read["人员照片"].ToString();
                 csuser.三级部门名称 = read["部门名称"].ToString();
                 csuser.二级部门名称 = read["学校名称"].ToString();
+                csuser.联系电话 = read["电话号码"].ToString();
             }
             read.Close();
             return csuser;

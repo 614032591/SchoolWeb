@@ -78,6 +78,14 @@ namespace FineUIPro.EmptyProjectNet40.报修管理
                 三级.EmptyText = "全部";
                 负责人.EmptyText = "全部";
                 房间.EmptyText = "全部";
+                OffSession();
+                string 职务= HttpContext.Current.Session["职务"].ToString();
+                联系电话.Text= HttpContext.Current.Session["电话号码"].ToString();
+                if (职务 == "资产管理员")
+                {
+                    Button1.Hidden = false;
+                }
+
             }
         }
 
@@ -503,7 +511,7 @@ namespace FineUIPro.EmptyProjectNet40.报修管理
                 }
 
 
-                if (报修人.Text != "" && 联系电话.Text != "" && h != "" && 报修单号.Text != "" && di != "" && 故障描述.Text != "")
+                if (报修人.Text != "" && 联系电话.Text != "" && h != "" && 报修单号.Text != "" && di != "")
                 {
                     //判断二级地点是否为空
                     if (房间1.SelectedText == "" || 房间1.SelectedText == null)
@@ -598,22 +606,22 @@ namespace FineUIPro.EmptyProjectNet40.报修管理
 
         protected void DropDownList1_SelectedIndexChanged1(object sender, EventArgs e)
         {
-            string flowstate = DropDownList1.SelectedText;
+            string flowstate = DropDownList1.SelectedValue;
             DataSet ds = bll.首页_X_资产报修流程表("全部");
 
-            if (flowstate == "待派单")
+            if (flowstate == "filter2")
             {
                 ds = bll.首页_X_资产报修流程表("待派单");
             }
-            else if (flowstate == "维修中")
+            else if (flowstate == "filter3")
             {
                 ds = bll.首页_X_资产报修流程表("维修中");
             }
-            else if (flowstate == "维修完成")
+            else if (flowstate == "filter4")
             {
                 ds = bll.首页_X_资产报修流程表("维修完成");
             }
-            else if (flowstate == "已完成")
+            else if (flowstate == "filter5")
             {
                 ds = bll.首页_X_资产报修流程表("已完成");
             }
@@ -662,18 +670,18 @@ namespace FineUIPro.EmptyProjectNet40.报修管理
                
                 int Sort = Convert.ToInt32(keys[9].ToString());
 
-                string 流程状态 = keys[1].ToString();
+                string 流程状态 = keys[1].ToString(); 
                 if (流程状态 == "待派单")
                 {
-                    Button9.Text = "提交派单";
+                    Button9.Text = "派单";
                 }
-                else if (流程状态 == "派单中")
+                else if (流程状态 == "已派单，维修中")
                 {
-                    Button9.Text = "提交维修";
+                    Button9.Text = "派单并报修";
                 }
-                else if (流程状态=="维修完成")
+                else if (流程状态=="已完工，待反馈")
                 {
-                    Button9.Text = "完成提交";
+                    Button9.Text = "结果反馈";
                 }
 
 
@@ -746,12 +754,17 @@ namespace FineUIPro.EmptyProjectNet40.报修管理
                 if (zt == "已完成")
                 {
                     Button9.Hidden = true;
-                    Button3.Text = "关闭";
+                    Button3.Text = "取消";
+                }
+                else if(zt== "待派单")
+                {
+                    Button9.Hidden = false;
+                    Button3.Text = "拒绝";
                 }
                 else
                 {
                     Button9.Hidden = false;
-                    Button3.Text = "拒绝";
+                    Button3.Text = "取消";
                 }
                 try
                 {
@@ -849,18 +862,18 @@ namespace FineUIPro.EmptyProjectNet40.报修管理
             {
                 DataSet ds = bll.查维修人();
                 DataTable dt = ds.Tables[0];
-                DropDownList3.DataTextField = "姓名";
-                DropDownList3.DataValueField = "ID";
-                DropDownList3.DataSource = dt;
-                DropDownList3.DataBind();
-
-                TextBox4.Text = nm;
+             
+                Grid5.DataSource = dt;
+                Grid5.DataBind();
+                
+                
                 Window4.Hidden = false;
             }
             else if (xa == "维修人员" && sort == 2)
             {
-
+                School待办业务BLL blla = new School待办业务BLL();
                 TextBox2.Text = nm;
+                TextBox1.Text = blla.获取维修人电话(nm);
                 Window5.Hidden = false;
             }
             else if (sort == 3 && ren == nm)
@@ -888,15 +901,19 @@ namespace FineUIPro.EmptyProjectNet40.报修管理
             {
                 DatePicker1.Text = DatePicker1.EmptyText;
             }
-            if (DropDownList3.SelectedText != null && TextBox7.Text != "" && DatePicker1.Text != "")
+            if (TextBox4.Text != "" && DatePicker1.Text != "")
             {
                 SchoolX_资产报修流程表 model = new SchoolX_资产报修流程表();
-                model.维修人员 = DropDownList3.SelectedText;
-                model.管理员电话 = TextBox7.Text;
+                model.维修人员 = TextBox4.Text;
+                model.维修人电话 = TextBox7.Text;
                 model.派单时间 = DatePicker1.Text;
-                model.管理员 = TextBox4.Text;
-                model.流程状态 = "派单中";
-
+                OffSession();
+                string username = Session["姓名"].ToString();
+                string tel = Session["电话号码"].ToString();
+                model.管理员 = username;
+                model.管理员电话 = tel;
+                model.流程状态 = "已派单，维修中";
+                
 
 
                 AM_提醒通知 ammodel = new AM_提醒通知();
@@ -911,7 +928,7 @@ namespace FineUIPro.EmptyProjectNet40.报修管理
                 ammodel.是否已读 = "否";
                 AM_待办业务 dbmodel = new AM_待办业务();                
                 dbmodel.处理方式 = "个人";
-                dbmodel.处理人= DropDownList3.SelectedText;
+                dbmodel.处理人 = model.维修人员;
                 dbmodel.Sort = 2;
                 dbmodel.流程状态 = model.流程状态;
                 dbmodel.事项名称 = "资产报修";
@@ -966,7 +983,7 @@ namespace FineUIPro.EmptyProjectNet40.报修管理
                 model.完工时间 = 完成时间.Text;
                 model.故障原因 = TextBox3.Text;
                 model.维修人员 = TextBox2.Text;
-                model.流程状态 = "维修完成";
+                model.流程状态 = "已完工，待反馈";
                 object a = Grid1.SelectedRow.DataKeys[0];
                 int id = Convert.ToInt32(a);
                 AM_提醒通知 ammodel = new AM_提醒通知();
@@ -1069,5 +1086,19 @@ namespace FineUIPro.EmptyProjectNet40.报修管理
             return String.Format("parent.addExampleTab({0});", joBuilder);
         }
 
+        #region 资产报修--获取维修人电话
+     
+        #endregion
+
+  
+
+        protected void Grid5_RowClick(object sender, GridRowClickEventArgs e)
+        {
+            object[] keys = Grid5.DataKeys[e.RowIndex];
+            string name = keys[1].ToString();
+            TextBox4.Text = name;
+            TextBox7.Text = keys[2].ToString();
+
+        }
     }
 }

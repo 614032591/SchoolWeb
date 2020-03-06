@@ -21,11 +21,11 @@ namespace PLM_SQLDAL
             }
             else if (str == "维修中")
             {
-                sb.Append(" and 流程状态='维修中'");
+                sb.Append(" and 流程状态='已派单，维修中'");
             }
             else if (str == "维修完成")
             {
-                sb.Append(" and 流程状态='维修完成' ");
+                sb.Append(" and 流程状态='已完工，待反馈' ");
             }
             else if (str == "已完成")
             {
@@ -383,7 +383,7 @@ namespace PLM_SQLDAL
         {
             try
             {
-                string sql = string.Format("UPDATE X_资产报修流程表 SET 管理员电话 = '{0}',维修人员='{1}',派单时间='{2}',管理员='{3}',流程状态='{4}',Sort=2 WHERE ID = " + id, model.管理员电话, model.维修人员, model.派单时间, model.管理员, model.流程状态);
+                string sql = string.Format("UPDATE X_资产报修流程表 SET 管理员电话 = '{0}',维修人员='{1}',派单时间='{2}',管理员='{3}',流程状态='{4}',维修人电话='{5}',Sort=2 WHERE ID = " + id, model.管理员电话, model.维修人员, model.派单时间, model.管理员, model.流程状态,model.维修人电话);
                 DBHelper.ExecuteNonQuery(DBHelper.ConnectionString, CommandType.Text, sql.ToString());
 
                 StringBuilder sbtz = new StringBuilder();

@@ -71,10 +71,10 @@
                                 <Columns>
                                     <f:RowNumberField />
                                     <f:RenderField ColumnID="ID" DataField="ID" HeaderText="ID" Hidden="true"></f:RenderField>
-                                    <f:RenderField ColumnID="流程状态" DataField="流程状态" HeaderText="流程状态"></f:RenderField>
+                                    <f:RenderField ColumnID="流程状态" DataField="流程状态" Width="150" HeaderText="流程状态"></f:RenderField>
                                     <f:RenderField ColumnID="FlowID" DataField="FlowID" HeaderText="FlowID" Hidden="true"></f:RenderField>
-                                    <f:RenderField ColumnID="FlowName" DataField="FlowName" HeaderText="FlowName" Hidden="true"></f:RenderField>
-                                    <f:RenderField ColumnID="事项名称" DataField="事项名称" HeaderText="事项名称" Width="120"></f:RenderField>
+                                    <f:RenderField ColumnID="FlowName" DataField="FlowName" HeaderText="事项名称" Width="120" ></f:RenderField>
+                                    <f:RenderField ColumnID="事项名称" DataField="事项名称" HeaderText="事项名称" Hidden="true" ></f:RenderField>
                                     <f:RenderField ColumnID="通知内容" DataField="通知内容" TextAlign="Center" ExpandUnusedSpace="true" HeaderText="通知内容"></f:RenderField>
                                     <f:RenderField ColumnID="发起人" DataField="发起人" HeaderText="发起人"></f:RenderField>
                                     <f:RenderField ColumnID="发起时间" DataField="发起时间" Width="120" HeaderText="发起时间"></f:RenderField>
@@ -96,10 +96,10 @@
                                 <Columns>
                                     <f:RowNumberField />
                                     <f:RenderField ColumnID="ID" DataField="ID" HeaderText="ID" Hidden="true"></f:RenderField>
-                                    <f:RenderField ColumnID="流程状态" DataField="流程状态" HeaderText="流程状态"></f:RenderField>
+                                    <f:RenderField ColumnID="流程状态" DataField="流程状态" HeaderText="流程状态" Width="150"></f:RenderField>
                                     <f:RenderField ColumnID="FlowID" DataField="FlowID" HeaderText="FlowID" Hidden="true"></f:RenderField>
-                                    <f:RenderField ColumnID="FlowName" DataField="FlowName" HeaderText="FlowName" Hidden="true"></f:RenderField>
-                                    <f:RenderField ColumnID="事项名称" DataField="事项名称" HeaderText="事项名称" Width="120"></f:RenderField>
+                                    <f:RenderField ColumnID="FlowName" DataField="FlowName" HeaderText="事项名称"  Width="120"></f:RenderField>
+                                    <f:RenderField ColumnID="事项名称" DataField="事项名称" HeaderText="事项名称" Hidden="true"></f:RenderField>
                                     <f:RenderField ColumnID="通知内容" DataField="通知内容" TextAlign="Center" ExpandUnusedSpace="true" HeaderText="通知内容"></f:RenderField>
                                     <f:RenderField ColumnID="发起人" DataField="发起人" HeaderText="发起人"></f:RenderField>
                                     <f:RenderField ColumnID="发起时间" DataField="发起时间" Width="120" HeaderText="发起时间"></f:RenderField>
@@ -230,20 +230,29 @@
                 <f:Image ID="Image2" runat="server" ImageWidth="600" ImageHeight="500" Width="400" Height="400"></f:Image>
             </Items>
         </f:Window>
-        <f:Window ID="Window4" Title="维修信息" Hidden="true" EnableIFrame="false" EnableMaximize="true" Target="Self" EnableResize="true" runat="server"
-            IsModal="true" BodyPadding="20">
-            <Items>
-                <f:ContentPanel runat="server" Title="维修信息" ShowHeader="false" ShowBorder="false">
-                    <%--     <f:Label ID="Label1" ShowLabel="false" runat="server" CssClass="red"></f:Label>--%>
-                    <br />
-                    <f:TextBox runat="server" Label="管理员" Readonly="true" ID="TextBox4" Width="300px" LabelWidth="120"></f:TextBox>
-                    <br />
-                    <f:DropDownList ID="DropDownList3" runat="server" Label="维修人员:" EnableMultiSelect="true" Required="true" LabelWidth="120" Width="300" EmptyText="请选择维修人员" AutoPostBack="true">
-                    </f:DropDownList>
-                    <br />
-                    <f:TextBox runat="server" Label="联系电话" ID="TextBox7" Width="300px" LabelWidth="120"></f:TextBox>
-                    <br />
-                    <f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="派单时间"
+        <f:Window ID="Window4" Title="派单" TitleAlign="Center" Hidden="true" EnableIFrame="false" EnableMaximize="true" Target="Self" EnableResize="true" runat="server"
+                IsModal="true" BodyPadding="20">
+                <Items>
+                    <f:ContentPanel runat="server" Title="维修信息" ShowHeader="false" ShowBorder="false">
+                        <%--     <f:Label ID="Label1" ShowLabel="false" runat="server" CssClass="red"></f:Label>--%>
+                        <br />
+                        <f:TextBox runat="server" Label="请选择维修人员，已选择" Readonly="true" ID="TextBox4" Width="300px" LabelWidth="120"></f:TextBox>
+                        <br />
+                        <f:Grid ID="Grid15"  IsFluid="true" CssClass="blockpanel" ShowBorder="true" BoxFlex="1" AllowPaging="false" IsDatabasePaging="false"
+                        ShowHeader="false" runat="server" DataKeyNames="ID,姓名,电话号码" EnableCheckBoxSelect="false" Height="200px" KeepCurrentSelection="true"
+                             EnableRowClickEvent="true"
+                            EnableRowDoubleClickEvent="true"  OnRowClick="Grid5_RowClick" EnableMultiSelect="false">
+                            <Columns>                                
+                                <f:RenderField ColumnID="ID" DataField="ID" HeaderText="ID" Hidden="true"></f:RenderField>
+                                <f:RenderField ColumnID="姓名" DataField="姓名" HeaderText="姓名"></f:RenderField>
+                                <f:RenderField ColumnID="电话号码" DataField="电话号码" HeaderText="电话" ExpandUnusedSpace="true"></f:RenderField>
+                            </Columns>
+                        </f:Grid>
+                        
+                        <f:TextBox runat="server" Label="请选择维修人员，已选择" Readonly="true" Hidden="true" ID="TextBox7" Width="300px" LabelWidth="120"></f:TextBox>
+                       
+                        <br />
+                    <f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Readonly="true" Label="派单时间"
                         ID="DatePicker1" ShowRedStar="true" Width="300px" LabelWidth="120">
                     </f:DatePicker>
                 </f:ContentPanel>
@@ -266,7 +275,7 @@
                     <%--     <f:Label ID="Label1" ShowLabel="false" runat="server" CssClass="red"></f:Label>--%>
                     <br />
                     <f:TextBox runat="server" Label="维修人" ID="TextBox2" Readonly="true" Width="300px" LabelWidth="120"></f:TextBox>
-                    <f:TextBox runat="server" Label="联系电话" ID="TextBox1" Width="300px" LabelWidth="120"></f:TextBox>
+                    <f:TextBox runat="server" Label="联系电话" ID="TextBox1" Readonly="true" Width="300px" LabelWidth="120"></f:TextBox>
                     <br />
                     <f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="完成时间"
                         ID="完成时间" ShowRedStar="true" Width="300px" LabelWidth="120">
@@ -285,12 +294,12 @@
                 </f:Toolbar>
             </Toolbars>
         </f:Window>
-        <f:Window ID="Window6" Title="确认完成" BodyPadding="20" Hidden="true" EnableIFrame="false" EnableMaximize="true" Target="Self" EnableResize="true" runat="server"
+        <f:Window ID="Window6" Title="结果反馈"  TitleAlign="Center" BodyPadding="20" Hidden="true" EnableIFrame="false" EnableMaximize="true" Target="Self" EnableResize="true" runat="server"
             IsModal="true">
             <Items>
                 <f:ContentPanel BodyPadding="20" runat="server" Title="维修信息" ShowHeader="false" ShowBorder="false">
                     <f:DatePicker runat="server" Required="true" DateFormatString="yyyy-MM-dd" Label="完工时间"
-                        ID="DatePicker2" ShowRedStar="true" Width="300px" LabelWidth="120">
+                        ID="DatePicker2" ShowRedStar="true" Readonly="true" Width="300px" LabelWidth="120">
                     </f:DatePicker>
                     <f:TextBox runat="server" Label="结果反馈" ID="结果反馈" Width="300px" LabelWidth="120"></f:TextBox>
                 </f:ContentPanel>

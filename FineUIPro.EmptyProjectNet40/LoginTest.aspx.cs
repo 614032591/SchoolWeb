@@ -1,5 +1,4 @@
 ﻿using FineUIPro;
-using FineUIPro;
 using PLM.BusinessRlues;
 using PLM_Model;
 using System;
@@ -64,7 +63,7 @@ namespace mydddd.Web
                 Session["三级部门ID"] = user.三级部门ID;
                 Session["姓名"] = user.姓名;
                 Session["职务"] = user.职务;
-                Session["联系电话"] = user.联系电话;
+                Session["电话号码"] = user.联系电话;
                 Session["三级部门名称"] = user.三级部门名称;
                 Session["二级部门名称"] = user.二级部门名称;
                 Response.Redirect("index.aspx");

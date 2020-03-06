@@ -342,15 +342,15 @@ namespace FineUIPro.EmptyProjectNet40.School代办中心
                     Image2.ImageUrl = model.故障照片;
                     if (流程状态 == "待派单")
                     {
-                        Button9.Text = "提交派单";
+                        Button9.Text = "派单";
                     }
-                    else if (流程状态 == "派单中")
+                    else if (流程状态 == "已派单，维修中")
                     {
-                        Button9.Text = "提交维修";
+                        Button9.Text = "派单并报修";
                     }
-                    else if (流程状态 == "维修完成")
+                    else if (流程状态 == "已完工，待反馈")
                     {
-                        Button9.Text = "完成提交";
+                        Button9.Text = "结果反馈";
                     }
                     else if (流程状态 == "已完成")
                     {
@@ -705,12 +705,9 @@ namespace FineUIPro.EmptyProjectNet40.School代办中心
                     {
                         DataSet ds = bllx.查维修人();
                         DataTable dt = ds.Tables[0];
-                        DropDownList3.DataTextField = "姓名";
-                        DropDownList3.DataValueField = "ID";
-                        DropDownList3.DataSource = dt;
-                        DropDownList3.DataBind();
+                       
 
-                        TextBox4.Text = nm;
+                       
                         Window4.Hidden = false;
                     }
                     else if (职务 == "维修人员" && sort == 2)
@@ -762,19 +759,20 @@ namespace FineUIPro.EmptyProjectNet40.School代办中心
             {
                 DataSet ds = bll.查维修人();
                 DataTable dt = ds.Tables[0];
-                DropDownList3.DataTextField = "姓名";
-                DropDownList3.DataValueField = "ID";
-                DropDownList3.DataSource = dt;
-                DropDownList3.DataBind();
+                
 
-                TextBox4.Text = nm;
-
+               
+                Grid15.DataSource = dt;
+                Grid15.DataBind();
                 Window4.Hidden = false;
             }
             else if (xa == "维修人员" && sort == 2)
             {
 
                 TextBox2.Text = nm;
+                School待办业务BLL blla = new School待办业务BLL();
+                TextBox1.Text = blla.获取维修人电话(nm);
+
                 Window5.Hidden = false;
             }
             else if (sort == 3 && ren == nm)
@@ -799,14 +797,18 @@ namespace FineUIPro.EmptyProjectNet40.School代办中心
             {
                 DatePicker1.Text = DatePicker1.EmptyText;
             }
-            if (DropDownList3.SelectedText != null && TextBox7.Text != "" && DatePicker1.Text != "")
+            if (TextBox7.Text != "" && DatePicker1.Text != "")
             {
                 SchoolX_资产报修流程表 model = new SchoolX_资产报修流程表();
-                model.维修人员 = DropDownList3.SelectedText;
-                model.管理员电话 = TextBox7.Text;
+                model.维修人员 = TextBox4.Text;
+                model.维修人电话 = TextBox7.Text;
                 model.派单时间 = DatePicker1.Text;
-                model.管理员 = TextBox4.Text;
-                model.流程状态 = "派单中";
+                OffSession();
+                string username = Session["姓名"].ToString();
+                string tel = Session["电话号码"].ToString();
+                model.管理员 = username;
+                model.管理员电话 = tel;
+                model.流程状态 = "已派单，维修中";
                 AM_提醒通知 ammodel = new AM_提醒通知();
 
                 ammodel.发起时间 = DateTime.Now;
@@ -819,7 +821,7 @@ namespace FineUIPro.EmptyProjectNet40.School代办中心
                 ammodel.是否已读 = "否";
                 AM_待办业务 dbmodel = new AM_待办业务();
                 dbmodel.处理方式 = "个人";
-                dbmodel.处理人 = DropDownList3.SelectedText;
+                dbmodel.处理人 = model.维修人员;
                 dbmodel.Sort = 2;
                 dbmodel.流程状态 = model.流程状态;
                 dbmodel.事项名称 = "资产报修";
@@ -922,7 +924,7 @@ namespace FineUIPro.EmptyProjectNet40.School代办中心
                 model.完工时间 = 完成时间.Text;
                 model.故障原因 = TextBox3.Text;
                 model.维修人员 = TextBox2.Text;
-                model.流程状态 = "维修完成";
+                model.流程状态 = "已完工，待反馈";
                 object a = Grid1.SelectedRow.DataKeys[2];
                 int id = Convert.ToInt32(a);
                 AM_提醒通知 ammodel = new AM_提醒通知();
@@ -999,7 +1001,7 @@ namespace FineUIPro.EmptyProjectNet40.School代办中心
                 ammodel.是否已读 = "否";
                 ammodel.通知类型 = "待办事项通知";
                 ammodel.通知职务 = "资产管理员管理员";
-                ammodel.消息内容 = "已接收，待管理员确认！";
+                ammodel.消息内容 = username + "的资产交接已接收,请及时处理！";
                 ammodel.消息事项 = "资产交接";
                 ammodel.发起人 = username;//处理人
                 ammodel.FlowID = flowid;
@@ -1052,7 +1054,7 @@ namespace FineUIPro.EmptyProjectNet40.School代办中心
                 AM_提醒通知 ammodel = new AM_提醒通知();
                 ammodel.发起时间 = DateTime.Now;
                 ammodel.是否已读 = "否";
-                ammodel.通知类型 = "待办事项通知";
+                ammodel.通知类型 = "结果反馈通知";
                 ammodel.通知职务 = "交付人";
                 ammodel.消息内容 = "您的资产交接流程已全部完成";
                 ammodel.消息事项 = "资产交接";
@@ -1127,15 +1129,15 @@ namespace FineUIPro.EmptyProjectNet40.School代办中心
                     Image2.ImageUrl = model.故障照片;
                     if (流程状态 == "待派单")
                     {
-                        Button9.Text = "提交派单";
+                        Button9.Text = "派单";
                     }
-                    else if (流程状态 == "派单中")
+                    else if (流程状态 == "已派单，维修中")
                     {
-                        Button9.Text = "提交维修";
+                        Button9.Text = "派单并报修";
                     }
-                    else if (流程状态 == "维修完成")
+                    else if (流程状态 == "已完工，待反馈")
                     {
-                        Button9.Text = "完成提交";
+                        Button9.Text = "结果反馈";
                     }
                     else if (流程状态 == "已完成")
                     {
@@ -2274,10 +2276,10 @@ namespace FineUIPro.EmptyProjectNet40.School代办中心
 
             ammodel.发起时间 = DateTime.Now;
             ammodel.是否已读 = "否";
-            ammodel.通知类型 = "结果通知";
+            ammodel.通知类型 = "结果反馈通知";
             ammodel.通知职务 = "资产管理员";
             ammodel.发起人 = username;
-            ammodel.消息内容 = "您来自" + ammodel.发起人 + "的资产转移结果通知！";
+            ammodel.消息内容 = "您来自" + ammodel.发起人 + "的资产转移已完成！";
             ammodel.消息事项 = "资产转移";
             ammodel.是否已读 = "否";
             AM_待办业务 dbmodel = new AM_待办业务();
@@ -2285,7 +2287,7 @@ namespace FineUIPro.EmptyProjectNet40.School代办中心
             dbmodel.处理职务 = "资产管理员";
             dbmodel.流程状态 = "已完成";
             dbmodel.发起人 = ammodel.发起人;
-            dbmodel.通知内容 = "您来自" + dbmodel.发起人 + "的资产转移结果通知！";
+            dbmodel.通知内容 = "您来自" + dbmodel.发起人 + "的资产转移已完成！";
             dbmodel.发起时间 = DateTime.Now.ToLongDateString();
             dbmodel.Sort = 0;
 
@@ -2524,5 +2526,14 @@ namespace FineUIPro.EmptyProjectNet40.School代办中心
         {
 
         }
+        #region 资产报修--获取维修人电话
+        protected void Grid5_RowClick(object sender, GridRowClickEventArgs e)
+        {
+            object[] keys = Grid15.DataKeys[e.RowIndex];
+            string name = keys[1].ToString();
+            TextBox4.Text = name;
+            TextBox7.Text = keys[2].ToString();
+        }
+        #endregion
     }
 }
